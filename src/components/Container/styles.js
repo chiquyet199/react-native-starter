@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
 	container: {
@@ -6,12 +6,12 @@ export default StyleSheet.create({
 	},
 	containerCenterItems: {
 		alignItems: 'center',
-		justifyContent: 'center'
+		justifyContent: 'center',
 	},
 	containerWithMargin: {
-		margin: 20
+		margin: 20,
 	},
 	containerWithPadding: {
-		padding: 20
-	}
-})
+		padding: 20,
+	},
+});

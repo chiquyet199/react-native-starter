@@ -1,17 +1,14 @@
-import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import React from 'react';
 
-import Container from './../components/Container'
-import Greeter from './../components/Greeter'
+import Container from './../components/Container';
+import Greeter from './../components/Greeter';
 
-class Home extends Component {
-	render() {
-		return (
-			<Container center={true}>
-				<Greeter />
-			</Container>
-		)
-	}
+function Home() {
+	return (
+		<Container center>
+			<Greeter />
+		</Container>
+	);
 }
 
-export default Home
+export default Home;
