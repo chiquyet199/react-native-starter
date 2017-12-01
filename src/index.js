@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeScreen from './screens/Home';
+import HomeScreen from 'screens/Home';
 
 class App extends Component {
 	render() {

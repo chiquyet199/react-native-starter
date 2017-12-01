@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Container from './../components/Container';
-import Greeter from './../components/Greeter';
+import Container from 'components/Container';
+import Greeter from 'components/Greeter';
 
 function Home() {
 	return (

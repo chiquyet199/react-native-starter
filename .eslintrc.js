@@ -1,6 +1,11 @@
 module.exports = {
 	extends: 'airbnb',
 	plugins: ['react', 'jsx-a11y', 'import'],
+	settings: {
+		'import/resolver': {
+			'babel-module': {},
+		},
+	},
 	rules: {
 		semi: ['error', 'always'],
 		indent: [2, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
