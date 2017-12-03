@@ -8,10 +8,13 @@
 		"lint": "eslint src/** -f node_modules/eslint-detailed-reporter/lib/detailed.js -o report.html"
 	},
 	"dependencies": {
+		"color": "^2.0.1",
 		"lodash": "^4.17.4",
 		"prop-types": "^15.6.0",
 		"react": "16.0.0",
-		"react-native": "0.50.4"
+		"react-native": "0.50.4",
+		"react-native-extended-stylesheet": "^0.8.0",
+		"react-navigation": "^1.0.0-beta.21"
 	},
 	"devDependencies": {
 		"babel-eslint": "^8.0.2",

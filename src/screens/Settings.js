@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 
 import Container from 'components/Container';
 import Greeter from 'components/Greeter';
-import Header from 'components/Header';
 
-class Home extends Component {
+class Settings extends Component {
 	static propTypes = {
 		navigation: PropTypes.object,
 	};
@@ -14,20 +13,14 @@ class Home extends Component {
 		navigation: null,
 	};
 
-	onSettingPress = () => {
-		this.props.navigation.navigate('Settings', {
-			customData: 'this string was pass from Home Page',
-		});
-	};
-
 	render() {
+		const { customData } = this.props.navigation.state.params;
 		return (
 			<Container center>
-				<Header onSettingPress={this.onSettingPress} />
-				<Greeter greetText="Wellcome to React Native Starter" />
+				<Greeter greetText={customData} />
 			</Container>
 		);
 	}
 }
 
-export default Home;
+export default Settings;

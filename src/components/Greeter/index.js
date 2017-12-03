@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
+import PropTypes from 'prop-types';
 
 import styles from './styles';
 
 class Greeter extends Component {
+	static propTypes = {
+		greetText: PropTypes.string,
+	};
+
+	static defaultProps = {
+		greetText: 'Hello',
+	};
+
 	render() {
-		return <Text style={styles.headerText}>Wellcome to React Starter</Text>;
+		const { greetText } = this.props;
+		return <Text style={styles.headerText}>{greetText}</Text>;
 	}
 }
 
