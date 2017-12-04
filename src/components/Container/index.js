@@ -1,32 +1,32 @@
-import React, { Component } from 'react';
-import { View } from 'react-native';
+import React from 'react';
 import PropTypes from 'prop-types';
+import { View } from 'react-native';
 
 import styles from './styles';
 
-class Container extends Component {
-	static propTypes = {
-		center: PropTypes.bool,
-		margin: PropTypes.bool,
-		padding: PropTypes.bool,
-		children: PropTypes.node.isRequired,
-	};
+const Container = (props) => {
+	const {
+		center, margin, padding, children,
+	} = props;
+	const containerStyles = [styles.container];
+	center && containerStyles.push(styles.containerCenterItems);
+	margin && containerStyles.push(styles.containerWithMargin);
+	padding && containerStyles.push(styles.containerWithPadding);
 
-	static defaultProps = {
-		center: false,
-		margin: false,
-		padding: false,
-	};
+	return <View style={containerStyles}>{children}</View>;
+};
 
-	render() {
-		const { center, margin, padding } = this.props;
-		const containerStyles = [styles.container];
-		center && containerStyles.push(styles.containerCenterItems);
-		margin && containerStyles.push(styles.containerWithMargin);
-		padding && containerStyles.push(styles.containerWithPadding);
+Container.propTypes = {
+	center: PropTypes.bool,
+	margin: PropTypes.bool,
+	padding: PropTypes.bool,
+	children: PropTypes.node.isRequired,
+};
 
-		return <View style={containerStyles}>{this.props.children}</View>;
-	}
-}
+Container.defaultProps = {
+	center: false,
+	margin: false,
+	padding: false,
+};
 
 export default Container;

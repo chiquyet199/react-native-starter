@@ -1,27 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { View, TouchableHighlight, Image } from 'react-native';
 
 import styles from './styles';
 
-class Header extends Component {
-	static propTypes = {
-		onSettingPress: PropTypes.func,
-	};
+const Header = (props) => {
+	const { onSettingPress } = props;
+	return (
+		<View style={styles.container}>
+			<TouchableHighlight style={styles.button} onPress={onSettingPress}>
+				<Image style={styles.icon} resizeMode="contain" source={require('./images/gear.png')} />
+			</TouchableHighlight>
+		</View>
+	);
+};
 
-	static defaultProps = {
-		onSettingPress: null,
-	};
+Header.propTypes = {
+	onSettingPress: PropTypes.func,
+};
 
-	render() {
-		const { onSettingPress } = this.props;
-		return (
-			<View style={styles.container}>
-				<TouchableHighlight style={styles.button} onPress={onSettingPress}>
-					<Image style={styles.icon} resizeMode="contain" source={require('./images/gear.png')} />
-				</TouchableHighlight>
-			</View>
-		);
-	}
-}
+Header.defaultProps = {
+	onSettingPress: null,
+};
+
 export default Header;
