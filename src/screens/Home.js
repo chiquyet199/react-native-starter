@@ -1,18 +1,31 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { fetchData } from 'actions/data';
 import Container from 'components/Container';
 import Greeter from 'components/Greeter';
+import Loading from 'components/Loading';
 import Header from 'components/Header';
 
 class Home extends Component {
 	static propTypes = {
 		navigation: PropTypes.object,
+		greetText: PropTypes.string,
+		fetchData: PropTypes.func,
+		isLoading: PropTypes.bool,
 	};
 
 	static defaultProps = {
 		navigation: null,
+		greetText: '',
+		fetchData: null,
+		isLoading: false,
 	};
+
+	componentDidMount() {
+		this.props.fetchData();
+	}
 
 	onSettingPress = () => {
 		this.props.navigation.navigate('Settings', {
@@ -21,13 +34,28 @@ class Home extends Component {
 	};
 
 	render() {
+		const { greetText, isLoading } = this.props;
+
+		if (isLoading) {
+			return Loading();
+		}
+
 		return (
 			<Container center>
 				<Header onSettingPress={this.onSettingPress} />
-				<Greeter greetText="Wellcome to React Native Starter" />
+				<Greeter greetText={greetText} />
 			</Container>
 		);
 	}
 }
 
-export default Home;
+const mapStateToProps = state => ({
+	isLoading: state.common.toJS().loading,
+	greetText: state.data.toJS().greetText,
+});
+
+const mapDispatchToProps = dispatch => ({
+	fetchData: () => dispatch(fetchData()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
