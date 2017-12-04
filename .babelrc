@@ -10,6 +10,7 @@
 					"screens": "./src/screens",
 					"configs": "./src/configs",
 					"reducers": "./src/reducers",
+					"services": "./src/services",
 					"components": "./src/components"
 				}
 			}

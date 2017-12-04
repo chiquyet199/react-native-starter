@@ -11,6 +11,7 @@ module.exports = {
 		semi: ['error', 'always'],
 		indent: [2, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
 		'no-tabs': 0,
+		'no-console': 0,
 		'no-mixed-spaces-and-tabs': 0,
 		'react/forbid-prop-types': 0,
 		'react/jsx-filename-extension': 0,
