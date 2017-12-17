@@ -349,14 +349,66 @@
 </style>
 </head>
 <body>
-	<div id="overview" class="bg-success">
-		<h1>ESLint Report - <small class="text-success">success</small></h1>
+	<div id="overview" class="bg-error">
+		<h1>ESLint Report - <small class="text-error">error</small></h1>
 	</div>
 	<div class="container">
 		<div id="summary">
 			<h2 class="page-header">Summary</h2>
-			<div>0 problems</div>
-			<div class="row"></div>
+			<div>211 problems (211 errors, 0 warnings)</div>
+			<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>211</td>
+</tr>
+	</tbody></table>
+</div>
+</div><div class="row">
+	<div class="column">
+		<h3>Most Problems</h3>
+		<table class="summary-table"><thead>
+			<tr>
+				<th>file path</th>
+				<th>errors</th>
+				<th>warnings</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcConfigsRoutesJs">/src/configs/routes.js</a></td>
+	<td>65</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensHomeJs">/src/screens/Home.js</a></td>
+	<td>35</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsHeaderStylesJs">/src/components/Header/styles.js</a></td>
+	<td>18</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerIndexJs">/src/components/Container/index.js</a></td>
+	<td>15</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensSettingsJs">/src/screens/Settings.js</a></td>
+	<td>14</td>
+	<td>0</td>
+</tr>
+		</tbody></table>
+	</div>
+</div>
+
 		</div>
 		<div id="details">
 			<h2 class="page-header">Details</h2>
@@ -377,7 +429,31 @@
 			</fieldset>
 			<table id="fileOverview">
 				<tbody>
-					<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerIndexJs" class="lint-result bg-success" data-group="f-0" data-problem-count="0" tabindex="0">
+					<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcActionsCommonJs" class="lint-result bg-success" data-group="f-0" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/actions/common.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcActionsDataJs" class="lint-result bg-success" data-group="f-1" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/actions/data.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerIndexJs" class="lint-result bg-error" data-group="f-2" data-problem-count="15" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -385,11 +461,427 @@
         /src/components/Container/index.js
     </th>
     <th class="result-summary">
-      0 problems
+      15 problems (15 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-2 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-2"
+								data-content="detailSummary-2"
+								aria-controls="detailSummary-2"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-2"
+								data-content="sourceCode-2"
+								aria-controls="sourceCode-2"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-2">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>15</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 29, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-2">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react';</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerStylesJs" class="lint-result bg-success" data-group="f-1" data-problem-count="0" tabindex="0">
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import PropTypes from 'prop-types';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import { View } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import styles from './styles';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>const Container = (props) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	const {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		center, margin, padding, children,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	} = props;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>	const containerStyles = [styles.container];</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>	center && containerStyles.push(styles.containerCenterItems);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>	margin && containerStyles.push(styles.containerWithMargin);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	padding && containerStyles.push(styles.containerWithPadding);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>	return &#60;View style={containerStyles}&#62;{children}&#60;/View&#62;;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code>Container.propTypes = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>	center: PropTypes.bool,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">21</td>
+	<td class="source"><code>	margin: PropTypes.bool,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">22</td>
+	<td class="source"><code>	padding: PropTypes.bool,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">23</td>
+	<td class="source"><code>	children: PropTypes.node.isRequired,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">24</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">25</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">26</td>
+	<td class="source"><code>Container.defaultProps = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">27</td>
+	<td class="source"><code>	center: false,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">28</td>
+	<td class="source"><code>	margin: false,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 29, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">29</td>
+	<td class="source"><code>	padding: false,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">30</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">31</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">32</td>
+	<td class="source"><code>export default Container;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">33</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerStylesJs" class="lint-result bg-error" data-group="f-3" data-problem-count="13" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -397,11 +889,328 @@
         /src/components/Container/styles.js
     </th>
     <th class="result-summary">
-      0 problems
+      13 problems (13 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-3 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-3"
+								data-content="detailSummary-3"
+								aria-controls="detailSummary-3"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-3"
+								data-content="sourceCode-3"
+								aria-controls="sourceCode-3"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-3">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>13</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-3">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import StyleSheet from 'react-native-extended-stylesheet';</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterIndexJs" class="lint-result bg-success" data-group="f-2" data-problem-count="0" tabindex="0">
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>export default StyleSheet.create({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">4</td>
+	<td class="source"><code>	container: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>		flex: 1,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">6</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>	containerCenterItems: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>		alignItems: 'center',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		justifyContent: 'center',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>	containerWithMargin: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>		margin: 20,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	containerWithPadding: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>		padding: 20,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterIndexJs" class="lint-result bg-error" data-group="f-4" data-problem-count="4" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -409,11 +1218,221 @@
         /src/components/Greeter/index.js
     </th>
     <th class="result-summary">
-      0 problems
+      4 problems (4 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-4 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-4"
+								data-content="detailSummary-4"
+								aria-controls="detailSummary-4"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-4"
+								data-content="sourceCode-4"
+								aria-controls="sourceCode-4"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-4">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-4">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react';</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterStylesJs" class="lint-result bg-success" data-group="f-3" data-problem-count="0" tabindex="0">
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import PropTypes from 'prop-types';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import { Text } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import styles from './styles';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>const Greeter = (props) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	const { greetText } = props;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>	return &#60;Text style={styles.headerText}&#62;{greetText}&#60;/Text&#62;;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code>Greeter.propTypes = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>	greetText: PropTypes.string,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">14</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code>Greeter.defaultProps = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>	greetText: '',</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">20</td>
+	<td class="source"><code>export default Greeter;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterStylesJs" class="lint-result bg-error" data-group="f-5" data-problem-count="3" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -421,11 +1440,2644 @@
         /src/components/Greeter/styles.js
     </th>
     <th class="result-summary">
+      3 problems (3 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-5 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-5"
+								data-content="detailSummary-5"
+								aria-controls="detailSummary-5"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-5"
+								data-content="sourceCode-5"
+								aria-controls="sourceCode-5"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-5">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-5">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import { StyleSheet } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>export default StyleSheet.create({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">4</td>
+	<td class="source"><code>	headerText: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>		fontSize: 30,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">6</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsHeaderIndexJs" class="lint-result bg-error" data-group="f-6" data-problem-count="10" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Header/index.js
+    </th>
+    <th class="result-summary">
+      10 problems (10 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-6 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-6"
+								data-content="detailSummary-6"
+								aria-controls="detailSummary-6"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-6"
+								data-content="sourceCode-6"
+								aria-controls="sourceCode-6"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-6">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>10</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-6">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import PropTypes from 'prop-types';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import { View, TouchableHighlight, Image } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import styles from './styles';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>const Header = (props) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	const { onSettingPress } = props;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>	return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>		&#60;View style={styles.container}&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>			&#60;TouchableHighlight style={styles.button} onPress={onSettingPress}&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>				&#60;Image style={styles.icon} resizeMode="contain" source={require('./images/gear.png')} /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>			&#60;/TouchableHighlight&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>		&#60;/View&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>	);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code>Header.propTypes = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">19</td>
+	<td class="source"><code>	onSettingPress: PropTypes.func,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">20</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">22</td>
+	<td class="source"><code>Header.defaultProps = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">23</td>
+	<td class="source"><code>	onSettingPress: null,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">24</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">25</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">26</td>
+	<td class="source"><code>export default Header;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">27</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsHeaderStylesJs" class="lint-result bg-error" data-group="f-7" data-problem-count="18" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Header/styles.js
+    </th>
+    <th class="result-summary">
+      18 problems (18 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-7 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-7"
+								data-content="detailSummary-7"
+								aria-controls="detailSummary-7"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-7"
+								data-content="sourceCode-7"
+								aria-controls="sourceCode-7"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-7">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>18</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-7">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import StyleSheet from 'react-native-extended-stylesheet';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { commonStyle } from 'configs/common-style-variables';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>export default StyleSheet.create({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>	container: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">6</td>
+	<td class="source"><code>		position: 'absolute',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>		backgroundColor: commonStyle.$primary,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>		left: 0,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		top: 0,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>		right: 0,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>		'@media ios': {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>			paddingTop: 20,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>	button: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>		alignSelf: 'flex-end',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>		paddingVertical: 5,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">18</td>
+	<td class="source"><code>		paddingHorizontal: 20,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">19</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>	icon: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">21</td>
+	<td class="source"><code>		width: 18,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">22</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">23</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">24</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsLoadingIndexJs" class="lint-result bg-error" data-group="f-8" data-problem-count="3" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Loading/index.js
+    </th>
+    <th class="result-summary">
+      3 problems (3 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-8 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-8"
+								data-content="detailSummary-8"
+								aria-controls="detailSummary-8"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-8"
+								data-content="sourceCode-8"
+								aria-controls="sourceCode-8"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-8">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-8">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { View, ActivityIndicator } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import { commonStyle } from 'configs/common-style-variables';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import styles from './styles';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>const Loading = () =&#62; (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	&#60;View style={styles.container}&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		&#60;ActivityIndicator size="large" color={commonStyle.$primary} /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	&#60;/View&#62;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">13</td>
+	<td class="source"><code>export default Loading;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">14</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsLoadingStylesJs" class="lint-result bg-error" data-group="f-9" data-problem-count="1" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Loading/styles.js
+    </th>
+    <th class="result-summary">
+      1 problem (1 error, 0 warnings)
+    </th>
+</tr>
+<tr class="f-9 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-9"
+								data-content="detailSummary-9"
+								aria-controls="detailSummary-9"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-9"
+								data-content="sourceCode-9"
+								aria-controls="sourceCode-9"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-9">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-9">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import StyleSheet from 'react-native-extended-stylesheet';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>export default StyleSheet.create({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">4</td>
+	<td class="source"><code>	container: { flex: 1, justifyContent: 'center' },</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcConfigsCommonStyleVariablesJs" class="lint-result bg-error" data-group="f-10" data-problem-count="4" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/common-style-variables.js
+    </th>
+    <th class="result-summary">
+      4 problems (4 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-10 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-10"
+								data-content="detailSummary-10"
+								aria-controls="detailSummary-10"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-10"
+								data-content="sourceCode-10"
+								aria-controls="sourceCode-10"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-10">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-10">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import Color from 'color';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>const MODIFIER = 0.1;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>export const commonStyle = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">6</td>
+	<td class="source"><code>	$primary: '#C12127',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>	$primaryDarker: Color('#C12127').darken(MODIFIER),</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	$primaryLighter: Color('#C12127').lighten(MODIFIER),</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>	$gray: '#c3c3c3',</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcConfigsRoutesJs" class="lint-result bg-error" data-group="f-11" data-problem-count="65" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/routes.js
+    </th>
+    <th class="result-summary">
+      65 problems (65 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-11 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-11"
+								data-content="detailSummary-11"
+								aria-controls="detailSummary-11"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-11"
+								data-content="sourceCode-11"
+								aria-controls="sourceCode-11"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-11">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>65</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 24, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 25, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 26, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 29, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 30, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 31, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 32, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 33, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 34, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 35, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 36, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 37, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 38, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 39, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 40, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 41, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 42, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 43, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 44, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 45, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 46, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 47, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 48, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 49, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 50, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 51, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 52, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 53, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 54, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 55, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 56, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 57, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 58, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 59, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 60, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 61, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 62, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 63, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 67, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 68, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 69, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 70, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 71, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 72, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 73, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 74, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 75, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 76, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 77, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 78, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 79, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 80, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-11">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import { TabNavigator, StackNavigator } from 'react-navigation';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { Platform } from 'react-native';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>import Home from 'screens/Home';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import About from 'screens/About';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>import Settings from 'screens/Settings';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>import { commonStyle } from './common-style-variables';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code>export const SettingsStack = StackNavigator({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	Settings: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>		screen: Settings,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>		navigationOptions: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>			title:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>				'Settings',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code>export const Tabs = TabNavigator(</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>	{</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">21</td>
+	<td class="source"><code>		Home: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">22</td>
+	<td class="source"><code>			screen: Home,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">23</td>
+	<td class="source"><code>			navigationOptions: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 24, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">24</td>
+	<td class="source"><code>				title:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 25, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">25</td>
+	<td class="source"><code>					'Home',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 26, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">26</td>
+	<td class="source"><code>			},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">27</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">28</td>
+	<td class="source"><code>		About: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 29, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">29</td>
+	<td class="source"><code>			screen: About,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 30, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">30</td>
+	<td class="source"><code>			navigationOptions: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 31, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">31</td>
+	<td class="source"><code>				title:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 32, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">32</td>
+	<td class="source"><code>					'About',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 33, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">33</td>
+	<td class="source"><code>			},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 34, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">34</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 35, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">35</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 36, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">36</td>
+	<td class="source"><code>	{</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 37, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">37</td>
+	<td class="source"><code>		tabBarPosition:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 38, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">38</td>
+	<td class="source"><code>			'bottom', // So your Android tabs go bottom</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 39, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">39</td>
+	<td class="source"><code>		tabBarOptions: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 40, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">40</td>
+	<td class="source"><code>			activeTintColor:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 41, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">41</td>
+	<td class="source"><code>				commonStyle.$primaryLighter, // Color of tab when pressed</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 42, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">42</td>
+	<td class="source"><code>			inactiveTintColor:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 43, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">43</td>
+	<td class="source"><code>				commonStyle.$gray, // Color of tab when not pressed</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 44, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">44</td>
+	<td class="source"><code>			showIcon:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 45, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">45</td>
+	<td class="source"><code>				'true', // Shows an icon for both iOS and Android</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 46, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">46</td>
+	<td class="source"><code>			showLabel:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 47, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">47</td>
+	<td class="source"><code>				Platform.OS !==</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 48, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">48</td>
+	<td class="source"><code>				'android', // No label for Android</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 49, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">49</td>
+	<td class="source"><code>			labelStyle: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 50, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">50</td>
+	<td class="source"><code>				fontSize: 20,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 51, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">51</td>
+	<td class="source"><code>				paddingBottom: 10,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 52, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">52</td>
+	<td class="source"><code>			},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 53, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">53</td>
+	<td class="source"><code>			style: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 54, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">54</td>
+	<td class="source"><code>				backgroundColor:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 55, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">55</td>
+	<td class="source"><code>					'#fff', // Makes Android tab bar white instead of standard blue</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 56, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">56</td>
+	<td class="source"><code>				height:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 57, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">57</td>
+	<td class="source"><code>					Platform.OS ===</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 58, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">58</td>
+	<td class="source"><code>					'ios'</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 59, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">59</td>
+	<td class="source"><code>						? 48</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 60, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">60</td>
+	<td class="source"><code>						: 50, // I didn't use this in my app, so the numbers may be off.</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 61, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">61</td>
+	<td class="source"><code>			},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 62, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">62</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 63, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">63</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">64</td>
+	<td class="source"><code>);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">65</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">66</td>
+	<td class="source"><code>export const Root = StackNavigator(</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 67, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">67</td>
+	<td class="source"><code>	{</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 68, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">68</td>
+	<td class="source"><code>		Tabs: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 69, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">69</td>
+	<td class="source"><code>			screen: Tabs,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 70, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">70</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 71, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">71</td>
+	<td class="source"><code>		Settings: {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 72, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">72</td>
+	<td class="source"><code>			screen: SettingsStack,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 73, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">73</td>
+	<td class="source"><code>		},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 74, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">74</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 75, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">75</td>
+	<td class="source"><code>	{</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 76, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">76</td>
+	<td class="source"><code>		mode:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 77, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">77</td>
+	<td class="source"><code>			'modal',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 78, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">78</td>
+	<td class="source"><code>		headerMode:</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 79, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">79</td>
+	<td class="source"><code>			'none',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 80, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">80</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">81</td>
+	<td class="source"><code>);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">82</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcConfigsStoreJs" class="lint-result bg-success" data-group="f-12" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/store.js
+    </th>
+    <th class="result-summary">
       0 problems
     </th>
 </tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcIndexJs" class="lint-result bg-success" data-group="f-4" data-problem-count="0" tabindex="0">
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcIndexJs" class="lint-result bg-error" data-group="f-13" data-problem-count="7" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -433,11 +4085,1003 @@
         /src/index.js
     </th>
     <th class="result-summary">
-      0 problems
+      7 problems (7 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-13 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-13"
+								data-content="detailSummary-13"
+								aria-controls="detailSummary-13"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-13"
+								data-content="sourceCode-13"
+								aria-controls="sourceCode-13"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-13">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-13">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React, { Component } from 'react';</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensHomeJs" class="lint-result bg-success" data-group="f-5" data-problem-count="0" tabindex="0">
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { Provider } from 'react-redux';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import EStyleSheet from 'react-native-extended-stylesheet';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import store from 'configs/store';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>import { Root } from 'configs/routes';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>import { commonStyle } from 'configs/common-style-variables';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code>EStyleSheet.build(commonStyle);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>class App extends Component {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>	render() {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>		return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>			&#60;Provider store={store}&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>				&#60;Root /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>			&#60;/Provider&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>		);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">18</td>
+	<td class="source"><code>	}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">20</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code>export default App;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">22</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcReducersCommonJs" class="lint-result bg-error" data-group="f-14" data-problem-count="4" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/reducers/common.js
+    </th>
+    <th class="result-summary">
+      4 problems (4 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-14 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-14"
+								data-content="detailSummary-14"
+								aria-controls="detailSummary-14"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-14"
+								data-content="sourceCode-14"
+								aria-controls="sourceCode-14"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-14">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-14">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import { LOADING } from 'actions/common';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import immutable from 'immutable';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>const initialState = immutable.fromJS({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>	loading: false,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code>const commonReducerHandlers = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>	[LOADING]: (state, payload) =&#62; state.set('loading', payload),</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code>export default (state = initialState, action) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>	const reducerHandler = commonReducerHandlers[action.type];</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	return reducerHandler ? reducerHandler(state, action.payload) : state;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcReducersDataJs" class="lint-result bg-error" data-group="f-15" data-problem-count="6" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/reducers/data.js
+    </th>
+    <th class="result-summary">
+      6 problems (6 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-15 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-15"
+								data-content="detailSummary-15"
+								aria-controls="detailSummary-15"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-15"
+								data-content="sourceCode-15"
+								aria-controls="sourceCode-15"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-15">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-15">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import immutable from 'immutable';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>const initialState = immutable.fromJS({ text: '' });</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>const dataReducerHandlers = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>	[FETCH_DATA_FAIL]: (state, payload) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>		console.log(payload);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>	},</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	[FETCH_DATA_SUCCESS]: (state, payload) =&#62; immutable.fromJS(payload),</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">13</td>
+	<td class="source"><code>export default (state = initialState, action) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	const reducerHander = dataReducerHandlers[action.type];</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>	return reducerHander ? reducerHander(state, action.payload) : state;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcReducersIndexJs" class="lint-result bg-error" data-group="f-16" data-problem-count="2" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/reducers/index.js
+    </th>
+    <th class="result-summary">
+      2 problems (2 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-16 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-16"
+								data-content="detailSummary-16"
+								aria-controls="detailSummary-16"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-16"
+								data-content="sourceCode-16"
+								aria-controls="sourceCode-16"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-16">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-16">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import { combineReducers } from 'redux';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import common from './common';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import data from './data';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>export default combineReducers({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 6, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">6</td>
+	<td class="source"><code>	common,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>	data,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensAboutJs" class="lint-result bg-error" data-group="f-17" data-problem-count="3" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/About.js
+    </th>
+    <th class="result-summary">
+      3 problems (3 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-17 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-17"
+								data-content="detailSummary-17"
+								aria-controls="detailSummary-17"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-17"
+								data-content="sourceCode-17"
+								aria-controls="sourceCode-17"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-17">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-17">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import Container from 'components/Container';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>import Greeter from 'components/Greeter';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>function About() {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>  return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	&#60;Container center&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		&#60;Greeter greetText="I'm chiquyet199" /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	&#60;/Container&#62;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>  );</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">13</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">14</td>
+	<td class="source"><code>export default About;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensHomeJs" class="lint-result bg-error" data-group="f-18" data-problem-count="35" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -445,8 +5089,1347 @@
         /src/screens/Home.js
     </th>
     <th class="result-summary">
-      0 problems
+      35 problems (35 errors, 0 warnings)
     </th>
+</tr>
+<tr class="f-18 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-18"
+								data-content="detailSummary-18"
+								aria-controls="detailSummary-18"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-18"
+								data-content="sourceCode-18"
+								aria-controls="sourceCode-18"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-18">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>35</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 24, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 26, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 30, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 31, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 32, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 33, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 34, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 36, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 37, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 39, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 40, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 41, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 43, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 44, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 45, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 46, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 47, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 48, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 49, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 53, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 54, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 58, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-18">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React, { Component } from 'react';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { connect } from 'react-redux';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import PropTypes from 'prop-types';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import { fetchData } from 'actions/data';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>import Container from 'components/Container';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>import Greeter from 'components/Greeter';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code>import Loading from 'components/Loading';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code>import Header from 'components/Header';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>class Home extends Component {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>	static propTypes = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>		navigation: PropTypes.object,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>		greetText: PropTypes.string,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>		fetchData: PropTypes.func,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>		isLoading: PropTypes.bool,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>	};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">19</td>
+	<td class="source"><code>	static defaultProps = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>		navigation: null,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">21</td>
+	<td class="source"><code>		greetText: '',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">22</td>
+	<td class="source"><code>		fetchData: null,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">23</td>
+	<td class="source"><code>		isLoading: false,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 24, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">24</td>
+	<td class="source"><code>	};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">25</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 26, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">26</td>
+	<td class="source"><code>	componentDidMount() {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 27, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">27</td>
+	<td class="source"><code>		this.props.fetchData();</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 28, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">28</td>
+	<td class="source"><code>	}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">29</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 30, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">30</td>
+	<td class="source"><code>	onSettingPress = () =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 31, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">31</td>
+	<td class="source"><code>		this.props.navigation.navigate('Settings', {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 32, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">32</td>
+	<td class="source"><code>			customData: 'this string was pass from Home Page',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 33, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">33</td>
+	<td class="source"><code>		});</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 34, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">34</td>
+	<td class="source"><code>	};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">35</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 36, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">36</td>
+	<td class="source"><code>	render() {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 37, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">37</td>
+	<td class="source"><code>		const { greetText, isLoading } = this.props;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">38</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 39, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">39</td>
+	<td class="source"><code>		if (isLoading) {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 40, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">40</td>
+	<td class="source"><code>			return Loading();</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 41, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">41</td>
+	<td class="source"><code>		}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">42</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 43, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">43</td>
+	<td class="source"><code>		return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 44, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">44</td>
+	<td class="source"><code>			&#60;Container center&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 45, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">45</td>
+	<td class="source"><code>				&#60;Header onSettingPress={this.onSettingPress} /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 46, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">46</td>
+	<td class="source"><code>				&#60;Greeter greetText={greetText} /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 47, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">47</td>
+	<td class="source"><code>			&#60;/Container&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 48, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">48</td>
+	<td class="source"><code>		);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 49, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">49</td>
+	<td class="source"><code>	}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">50</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">51</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">52</td>
+	<td class="source"><code>const mapStateToProps = state =&#62; ({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 53, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">53</td>
+	<td class="source"><code>	isLoading: state.common.toJS().loading,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 54, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">54</td>
+	<td class="source"><code>	greetText: state.data.toJS().greetText,</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">55</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">56</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">57</td>
+	<td class="source"><code>const mapDispatchToProps = dispatch =&#62; ({</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 58, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">58</td>
+	<td class="source"><code>	fetchData: () =&#62; dispatch(fetchData()),</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">59</td>
+	<td class="source"><code>});</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">60</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">61</td>
+	<td class="source"><code>export default connect(mapStateToProps, mapDispatchToProps)(Home);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">62</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensSettingsJs" class="lint-result bg-error" data-group="f-19" data-problem-count="14" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/Settings.js
+    </th>
+    <th class="result-summary">
+      14 problems (14 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-19 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-19"
+								data-content="detailSummary-19"
+								aria-controls="detailSummary-19"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-19"
+								data-content="sourceCode-19"
+								aria-controls="sourceCode-19"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-19">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>14</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-19">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React, { Component } from 'react';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import PropTypes from 'prop-types';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>import Container from 'components/Container';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import Greeter from 'components/Greeter';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>class Settings extends Component {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>	static propTypes = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>		navigation: PropTypes.object,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>	};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>	static defaultProps = {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>		navigation: null,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>	};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>	render() {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>		const { customData } = this.props.navigation.state.params;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">18</td>
+	<td class="source"><code>		return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 19, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">19</td>
+	<td class="source"><code>			&#60;Container center&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>				&#60;Greeter greetText={customData} /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 21, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">21</td>
+	<td class="source"><code>			&#60;/Container&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 22, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">22</td>
+	<td class="source"><code>		);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 23, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">23</td>
+	<td class="source"><code>	}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">24</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">25</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">26</td>
+	<td class="source"><code>export default Settings;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">27</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcServicesApiJs" class="lint-result bg-error" data-group="f-20" data-problem-count="4" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/services/api.js
+    </th>
+    <th class="result-summary">
+      4 problems (4 errors, 0 warnings)
+    </th>
+</tr>
+<tr class="f-20 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-20"
+								data-content="detailSummary-20"
+								aria-controls="detailSummary-20"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-20"
+								data-content="sourceCode-20"
+								aria-controls="sourceCode-20"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-20">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 2, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 3, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-20">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>export default {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 2, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">2</td>
+	<td class="source"><code>	fetchData: () =&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 3, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">3</td>
+	<td class="source"><code>		new Promise((resolve) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 4, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">4</td>
+	<td class="source"><code>			setTimeout(() =&#62; resolve({ greetText: 'Hello from React Native Starter' }), 2000);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>		}),</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
 </tr>
 
 				</tbody>
