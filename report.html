@@ -349,14 +349,86 @@
 </style>
 </head>
 <body>
-	<div id="overview" class="bg-success">
-		<h1>ESLint Report - <small class="text-success">success</small></h1>
+	<div id="overview" class="bg-error">
+		<h1>ESLint Report - <small class="text-error">error</small></h1>
 	</div>
 	<div class="container">
 		<div id="summary">
 			<h2 class="page-header">Summary</h2>
-			<div>0 problems</div>
-			<div class="row"></div>
+			<div>26 problems (25 errors, 1 warning)</div>
+			<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a></td>
+	<td>10</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>7</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a></td>
+	<td>4</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a></td>
+	<td>2</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/arrow-parens" target="_blank">arrow-parens</a></td>
+	<td>1</td>
+</tr>
+	</tbody></table>
+</div>
+<div class="column">
+	<h3 class="text-warning">Top warnings</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-console" target="_blank">no-console</a></td>
+	<td>1</td>
+</tr>
+	</tbody></table>
+</div>
+</div><div class="row">
+	<div class="column">
+		<h3>Most Problems</h3>
+		<table class="summary-table"><thead>
+			<tr>
+				<th>file path</th>
+				<th>errors</th>
+				<th>warnings</th>
+			</tr>
+		</thead><tbody>
+			<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcIndexJs">/src/index.js</a></td>
+	<td>14</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsGreeterGreeterJs">/src/components/Greeter/Greeter.js</a></td>
+	<td>11</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td><a href="#usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcReducersDataJs">/src/reducers/data.js</a></td>
+	<td>0</td>
+	<td>1</td>
+</tr>
+		</tbody></table>
+	</div>
+</div>
+
 		</div>
 		<div id="details">
 			<h2 class="page-header">Details</h2>
@@ -377,19 +449,43 @@
 			</fieldset>
 			<table id="fileOverview">
 				<tbody>
-					<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerIndexJs" class="lint-result bg-success" data-group="f-0" data-problem-count="0" tabindex="0">
+					<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcActionsCommonJs" class="lint-result bg-success" data-group="f-0" data-problem-count="0" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
     <th>
-        /src/components/Container/index.js
+        /src/actions/common.js
     </th>
     <th class="result-summary">
       0 problems
     </th>
 </tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsContainerStylesJs" class="lint-result bg-success" data-group="f-1" data-problem-count="0" tabindex="0">
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcActionsDataJs" class="lint-result bg-success" data-group="f-1" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/actions/data.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsContainerContainerJs" class="lint-result bg-success" data-group="f-2" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Container/Container.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsContainerStylesJs" class="lint-result bg-success" data-group="f-3" data-problem-count="0" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -401,19 +497,331 @@
     </th>
 </tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterIndexJs" class="lint-result bg-success" data-group="f-2" data-problem-count="0" tabindex="0">
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsGreeterGreeterJs" class="lint-result bg-error" data-group="f-4" data-problem-count="11" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
     <th>
-        /src/components/Greeter/index.js
+        /src/components/Greeter/Greeter.js
     </th>
     <th class="result-summary">
-      0 problems
+      11 problems (11 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-4 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-4"
+								data-content="detailSummary-4"
+								aria-controls="detailSummary-4"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-4"
+								data-content="sourceCode-4"
+								aria-controls="sourceCode-4"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-4">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a></td>
+	<td>10</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/arrow-parens" target="_blank">arrow-parens</a></td>
+	<td>1</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 1, Column 26: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 2, Column 35: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 3, Column 36: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 30: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 17: "Expected parentheses around arrow function argument having a body with curly braces."
+		<a href="http://eslint.org/docs/rules/arrow-parens" target="_blank">arrow-parens</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 30: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 60: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 23: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-4">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 1, Column 26: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">1</td>
+	<td class="source"><code>import React from 'react'</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcComponentsGreeterStylesJs" class="lint-result bg-success" data-group="f-3" data-problem-count="0" tabindex="0">
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 2, Column 35: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">2</td>
+	<td class="source"><code>import PropTypes from 'prop-types'</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 3, Column 36: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">3</td>
+	<td class="source"><code>import { Text } from 'react-native'</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 5, Column 30: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">5</td>
+	<td class="source"><code>import styles from './styles'</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 7, Column 17: "Expected parentheses around arrow function argument having a body with curly braces."
+		<a href="http://eslint.org/docs/rules/arrow-parens" target="_blank">arrow-parens</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">7</td>
+	<td class="source"><code>const Greeter = props =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 8, Column 30: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">8</td>
+	<td class="source"><code>  const { greetText } = props</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 9, Column 60: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">9</td>
+	<td class="source"><code>  return &#60;Text style={styles.headerText}&#62;{greetText}&#60;/Text&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 10, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">10</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code>Greeter.propTypes = {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">13</td>
+	<td class="source"><code>  greetText: PropTypes.string,</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code>Greeter.defaultProps = {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code>  greetText: '',</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">18</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 20, Column 23: "Missing semicolon."
+		<a href="http://eslint.org/docs/rules/semi" target="_blank">semi</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">20</td>
+	<td class="source"><code>export default Greeter</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsGreeterStylesJs" class="lint-result bg-success" data-group="f-5" data-problem-count="0" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -425,7 +833,103 @@
     </th>
 </tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcIndexJs" class="lint-result bg-success" data-group="f-4" data-problem-count="0" tabindex="0">
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsHeaderHeaderJs" class="lint-result bg-success" data-group="f-6" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Header/Header.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsHeaderStylesJs" class="lint-result bg-success" data-group="f-7" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Header/styles.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsIndexJs" class="lint-result bg-success" data-group="f-8" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/index.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsLoadingLoadingJs" class="lint-result bg-success" data-group="f-9" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Loading/Loading.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcComponentsLoadingStylesJs" class="lint-result bg-success" data-group="f-10" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/components/Loading/styles.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcConfigsCommonStyleVariablesJs" class="lint-result bg-success" data-group="f-11" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/common-style-variables.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcConfigsRoutesJs" class="lint-result bg-success" data-group="f-12" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/routes.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcConfigsStoreJs" class="lint-result bg-success" data-group="f-13" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/configs/store.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcIndexJs" class="lint-result bg-error" data-group="f-14" data-problem-count="14" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
@@ -433,16 +937,615 @@
         /src/index.js
     </th>
     <th class="result-summary">
-      0 problems
+      14 problems (14 errors, 0 warnings)
     </th>
 </tr>
+<tr class="f-14 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-14"
+								data-content="detailSummary-14"
+								aria-controls="detailSummary-14"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-14"
+								data-content="sourceCode-14"
+								aria-controls="sourceCode-14"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-14">
+				<div class="row"><div class="column">
+	<h3 class="text-error">Top errors</h3>
+	<table class="summary-table"><thead>
+		<tr>
+			<th>rule</th>
+			<th>count</th>
+		</tr>
+	</thead><tbody>
+		<tr>
+	<td><a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a></td>
+	<td>7</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a></td>
+	<td>4</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a></td>
+	<td>2</td>
+</tr>
+<tr>
+	<td><a href="http://eslint.org/docs/rules/react/prefer-stateless-function" target="_blank">react/prefer-stateless-function</a></td>
+	<td>1</td>
+</tr>
+	</tbody></table>
+</div>
+</div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 1: "Component should be written as a pure function"
+		<a href="http://eslint.org/docs/rules/react/prefer-stateless-function" target="_blank">react/prefer-stateless-function</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 1: "Expected indentation of 2 spaces but found 1 tab."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 1: "Expected indentation of 4 spaces but found 2 tabs."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 4: "Expected indentation of 2 space characters but found 0."
+		<a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 5: "Expected indentation of 2 space characters but found 0."
+		<a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 1: "Expected indentation of 4 spaces but found 2 tabs."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 1: "Expected indentation of 2 spaces but found 1 tab."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-14">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import React, { Component } from 'react';</code></td>
+</tr>
 
-<tr id="usersQuyetnguyenDocumentsProjectsReactNativeReactNativeStarterSrcScreensHomeJs" class="lint-result bg-success" data-group="f-5" data-problem-count="0" tabindex="0">
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { Provider } from 'react-redux';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code>import EStyleSheet from 'react-native-extended-stylesheet';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code>import store from 'configs/store';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>import { Root } from 'configs/routes';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>import { commonStyle } from 'configs/common-style-variables';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">8</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code>EStyleSheet.build(commonStyle);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 11, Column 1: "Component should be written as a pure function"
+		<a href="http://eslint.org/docs/rules/react/prefer-stateless-function" target="_blank">react/prefer-stateless-function</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">11</td>
+	<td class="source"><code>class App extends Component {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 1: "Expected indentation of 2 spaces but found 1 tab."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 12, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">12</td>
+	<td class="source"><code>	render() {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 1: "Expected indentation of 4 spaces but found 2 tabs."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 13, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">13</td>
+	<td class="source"><code>		return (</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 14, Column 4: "Expected indentation of 2 space characters but found 0."
+		<a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">14</td>
+	<td class="source"><code>			&#60;Provider store={store}&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 15, Column 5: "Expected indentation of 2 space characters but found 0."
+		<a href="http://eslint.org/docs/rules/react/jsx-indent" target="_blank">react/jsx-indent</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">15</td>
+	<td class="source"><code>				&#60;Root /&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 16, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">16</td>
+	<td class="source"><code>			&#60;/Provider&#62;</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 1: "Expected indentation of 4 spaces but found 2 tabs."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 17, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">17</td>
+	<td class="source"><code>		);</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 1: "Expected indentation of 2 spaces but found 1 tab."
+		<a href="http://eslint.org/docs/rules/indent" target="_blank">indent</a>
+	</td>
+</tr><tr class="issue">
+	<td><strong class="text-error">Error<strong></td>
+	<td>
+		Row 18, Column 2: "Unexpected tab character."
+		<a href="http://eslint.org/docs/rules/no-tabs" target="_blank">no-tabs</a>
+	</td>
+</tr><tr class="hit bg-error">
+	<td class="line">18</td>
+	<td class="source"><code>	}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">20</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code>export default App;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">22</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcReducersCommonJs" class="lint-result bg-success" data-group="f-15" data-problem-count="0" tabindex="0">
     <th class="icon-box" colspan="1">
         <span class="caret"></span>
     </th>
     <th>
-        /src/screens/Home.js
+        /src/reducers/common.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcReducersDataJs" class="lint-result bg-warning" data-group="f-16" data-problem-count="1" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/reducers/data.js
+    </th>
+    <th class="result-summary">
+      1 problem (0 errors, 1 warning)
+    </th>
+</tr>
+<tr class="f-16 hidden">
+	<td colspan="5">
+		<ul class="nav-tabs" role="tablist">
+			<li role="presentation" class="active">
+				<button data-parent=".f-16"
+								data-content="detailSummary-16"
+								aria-controls="detailSummary-16"
+								type="button"
+								role="tab">
+					Summary
+				</button>
+			</li>
+			<li role="presentation">
+				<button data-parent=".f-16"
+								data-content="sourceCode-16"
+								aria-controls="sourceCode-16"
+								type="button"
+								role="tab">
+					SourceCode
+				</button>
+			</li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane" id="detailSummary-16">
+				<div class="row"></div>
+<div class="row">
+	<h3 class="page-header">All Rules</h3>
+	<table class="summary-table">
+		<thead>
+			<tr>
+				<th>Severity</th>
+				<th>Rule</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="issue">
+	<td><strong class="text-warning">Warning<strong></td>
+	<td>
+		Row 8, Column 5: "Unexpected console statement."
+		<a href="http://eslint.org/docs/rules/no-console" target="_blank">no-console</a>
+	</td>
+</tr>
+		</tbody>
+	</table>
+</div>
+			</div>
+			<div role="tabpanel" class="tab-pane hidden" id="sourceCode-16">
+				<table class="source-code">
+	<thead>
+		<tr>
+			<th>Line</th>
+			<th>Source</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class="hit bg-success">
+	<td class="line">1</td>
+	<td class="source"><code>import immutable from 'immutable';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">2</td>
+	<td class="source"><code>import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data';</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">3</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">4</td>
+	<td class="source"><code>const initialState = immutable.fromJS({ text: '' });</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">5</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">6</td>
+	<td class="source"><code>const dataReducerHandlers = {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">7</td>
+	<td class="source"><code>  [FETCH_DATA_FAIL]: (state, payload) =&#62; {</code></td>
+</tr>
+
+<tr class="issue">
+	<td><strong class="text-warning">Warning<strong></td>
+	<td>
+		Row 8, Column 5: "Unexpected console statement."
+		<a href="http://eslint.org/docs/rules/no-console" target="_blank">no-console</a>
+	</td>
+</tr><tr class="hit bg-warning">
+	<td class="line">8</td>
+	<td class="source"><code>    console.log(payload);</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">9</td>
+	<td class="source"><code>  },</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code>  [FETCH_DATA_SUCCESS]: (state, payload) =&#62; immutable.fromJS(payload),</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">13</td>
+	<td class="source"><code>export default (state = initialState, action) =&#62; {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">14</td>
+	<td class="source"><code>  const reducerHander = dataReducerHandlers[action.type];</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">15</td>
+	<td class="source"><code>  return reducerHander ? reducerHander(state, action.payload) : state;</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code>};</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">17</td>
+	<td class="source"><code></code></td>
+</tr>
+
+	</tbody>
+</table>
+
+			</div>
+		</div>
+	</td>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcReducersIndexJs" class="lint-result bg-success" data-group="f-17" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/reducers/index.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcScreensAboutAboutJs" class="lint-result bg-success" data-group="f-18" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/About/About.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcScreensHomeHomeJs" class="lint-result bg-success" data-group="f-19" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/Home/Home.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcScreensIndexJs" class="lint-result bg-success" data-group="f-20" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/index.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcScreensSettingsSettingsJs" class="lint-result bg-success" data-group="f-21" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/screens/Settings/Settings.js
+    </th>
+    <th class="result-summary">
+      0 problems
+    </th>
+</tr>
+
+<tr id="usersQuyetnguyenDocumentsProjectsReactNativeStarterSrcServicesApiJs" class="lint-result bg-success" data-group="f-22" data-problem-count="0" tabindex="0">
+    <th class="icon-box" colspan="1">
+        <span class="caret"></span>
+    </th>
+    <th>
+        /src/services/api.js
     </th>
     <th class="result-summary">
       0 problems

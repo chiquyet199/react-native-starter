@@ -3,6 +3,6 @@ import common from './common';
 import data from './data';
 
 export default combineReducers({
-	common,
-	data,
+  common,
+  data,
 });
