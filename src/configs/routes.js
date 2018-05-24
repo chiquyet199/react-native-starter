@@ -2,7 +2,7 @@ import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Platform } from 'react-native';
 
 import { Home, About, Settings } from 'screens';
-import { commonStyle } from './common-style-variables';
+import styleVariables from 'assets/styles/variables';
 
 export const SettingsStack = StackNavigator({
   Settings: {
@@ -31,8 +31,8 @@ export const Tabs = TabNavigator(
   {
     tabBarPosition: 'bottom', // So your Android tabs go bottom
     tabBarOptions: {
-      activeTintColor: commonStyle.$primaryLighter, // Color of tab when pressed
-      inactiveTintColor: commonStyle.$gray, // Color of tab when not pressed
+      activeTintColor: styleVariables.$primaryLighter, // Color of tab when pressed
+      inactiveTintColor: styleVariables.$gray, // Color of tab when not pressed
       showIcon: 'true', // Shows an icon for both iOS and Android
       showLabel: Platform.OS !== 'android', // No label for Android
       labelStyle: {

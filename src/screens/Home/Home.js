@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { View } from 'react-native';
 import PropTypes from 'prop-types';
 
+import common from 'assets/styles/common';
 import { fetchData } from 'actions/data';
-import { Container, Greeter, Loading, Header } from 'components';
+import { Container, Greeter, Loading, Header, Row } from 'components';
 
 class Home extends Component {
   static propTypes = {
@@ -41,6 +43,15 @@ class Home extends Component {
       <Container center>
         <Header onSettingPress={this.onSettingPress} />
         <Greeter greetText={greetText} />
+        <Row rtl style={[common.padVertSm, { flexWrap: 'wrap' }]}>
+          <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
+          <View style={{ width: 100, height: 20, backgroundColor: 'blue' }} />
+          <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
+          <View style={{ width: 100, height: 20, backgroundColor: 'blue' }} />
+          <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
+          <View style={{ width: 100, height: 20, backgroundColor: 'blue' }} />
+          <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
+        </Row>
       </Container>
     );
   }

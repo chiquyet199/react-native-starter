@@ -6,7 +6,7 @@ import styles from './styles';
 
 const Greeter = (props) => {
   const { greetText } = props;
-  return <Text style={styles.headerText}>{greetText}</Text>;
+  return <Text style={[styles.headerText, { flexDirection: 'row' }]}>{greetText}</Text>;
 };
 
 Greeter.propTypes = {

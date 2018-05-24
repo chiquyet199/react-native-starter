@@ -1,19 +1,20 @@
 {
-	"presets": ["react-native"],
-	"plugins": [
-		[
-			"module-resolver",
-			{
-				"cwd": "babelrc",
-				"alias": {
-					"actions": "./src/actions",
-					"screens": "./src/screens",
-					"configs": "./src/configs",
-					"reducers": "./src/reducers",
-					"services": "./src/services",
-					"components": "./src/components"
-				}
-			}
-		]
-	]
+  "presets": ["react-native"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "cwd": "babelrc",
+        "alias": {
+          "actions": "./src/actions",
+          "screens": "./src/screens",
+          "assets": "./src/assets",
+          "configs": "./src/configs",
+          "reducers": "./src/reducers",
+          "services": "./src/services",
+          "components": "./src/components"
+        }
+      }
+    ]
+  ]
 }

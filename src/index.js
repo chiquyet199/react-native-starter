@@ -4,9 +4,9 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 
 import store from 'configs/store';
 import { Root } from 'configs/routes';
-import { commonStyle } from 'configs/common-style-variables';
+import styleVariables from 'assets/styles/variables';
 
-EStyleSheet.build(commonStyle);
+EStyleSheet.build(styleVariables);
 
 const App = () => (
   <Provider store={store}>
