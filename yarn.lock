@@ -2608,10 +2608,6 @@ image-size@^0.6.0:
   version "0.6.2"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.2.tgz#8ee316d4298b028b965091b673d5f1537adee5b4"
 
-immutable@^3.8.2:
-  version "3.8.2"
-  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
-
 imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
@@ -3392,6 +3388,10 @@ load-json-file@^2.0.0:
     parse-json "^2.2.0"
     pify "^2.0.0"
     strip-bom "^3.0.0"
+
+localized-strings@^0.0.11:
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/localized-strings/-/localized-strings-0.0.11.tgz#96ccab4bd1855a850f3099dc78e1b61423f6cecd"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -4296,12 +4296,26 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
+react-localization@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-localization/-/react-localization-1.0.10.tgz#fdb5cfb88bf4bd70ec2109bb425d5408789fe704"
+  dependencies:
+    localized-strings "^0.0.11"
+    react "^16.0.0"
+
 react-native-extended-stylesheet@^0.8.0:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/react-native-extended-stylesheet/-/react-native-extended-stylesheet-0.8.1.tgz#5bc69dd24959cdc2e1239fe78be0088105088757"
   dependencies:
     css-mediaquery "^0.1.2"
     object-resolve-path "^1.1.0"
+
+react-native-localization@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-native-localization/-/react-native-localization-1.0.10.tgz#b4e188ff9b8bb3ae3ee15da86583d6d745c8ed59"
+  dependencies:
+    react "^16.0.0"
+    react-localization "^1.0.10"
 
 react-native-navigation@^1.1.471:
   version "1.1.471"
@@ -4405,6 +4419,15 @@ react-transform-hmr@^1.0.4:
 react@16.0.0:
   version "16.0.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.0.0.tgz#ce7df8f1941b036f02b2cca9dbd0cb1f0e855e2d"
+  dependencies:
+    fbjs "^0.8.16"
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.0"
+
+react@^16.0.0:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
