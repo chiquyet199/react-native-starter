@@ -1,15 +1,16 @@
-import { LOADING } from 'actions/common'
 import immutable from 'immutable'
+import { LOADING } from 'actions/common'
 
 const initialState = immutable.fromJS({
   loading: false,
 })
 
 const commonReducerHandlers = {
-  [LOADING]: (state, payload) => state.set('loading', payload),
+  [LOADING]: ({ state, payload }) => state.set('loading', payload),
 }
 
 export default (state = initialState, action) => {
-  const reducerHandler = commonReducerHandlers[action.type]
-  return reducerHandler ? reducerHandler(state, action.payload) : state
+  const { payload, type } = action
+  const reducerHander = commonReducerHandlers[type]
+  return reducerHander ? reducerHander({ state, payload }) : state
 }

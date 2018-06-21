@@ -3,14 +3,19 @@ import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data'
 
 const initialState = immutable.fromJS({ text: '' })
 
+const fetchDataFailHandler = ({ payload }) => {
+  console.log(payload)
+}
+
+const fetchDataSuccessHandler = ({ payload }) => immutable.fromJS(payload)
+
 const dataReducerHandlers = {
-  [FETCH_DATA_FAIL]: (state, payload) => {
-    console.log(payload)
-  },
-  [FETCH_DATA_SUCCESS]: (state, payload) => immutable.fromJS(payload),
+  [FETCH_DATA_FAIL]: fetchDataFailHandler,
+  [FETCH_DATA_SUCCESS]: fetchDataSuccessHandler,
 }
 
 export default (state = initialState, action) => {
-  const reducerHander = dataReducerHandlers[action.type]
-  return reducerHander ? reducerHander(state, action.payload) : state
+  const { payload, type } = action
+  const reducerHander = dataReducerHandlers[type]
+  return reducerHander ? reducerHander({ state, payload }) : state
 }
