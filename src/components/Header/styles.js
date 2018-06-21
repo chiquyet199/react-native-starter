@@ -1,5 +1,5 @@
-import StyleSheet from 'react-native-extended-stylesheet';
-import styleVariables from 'assets/styles/variables';
+import StyleSheet from 'react-native-extended-stylesheet'
+import styleVariables from 'assets/styles/variables'
 
 export default StyleSheet.create({
   container: {
@@ -20,4 +20,4 @@ export default StyleSheet.create({
   icon: {
     width: 18,
   },
-});
+})
