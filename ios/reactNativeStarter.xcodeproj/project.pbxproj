@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -39,6 +38,13 @@
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		BD9BDD698EFD4A4599A46A10 /* Cocogoose Pro Light-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */; };
+		15C6D94319414D0AA735CF99 /* Cocogoose Pro Thin-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */; };
+		F4400316FD044DA39078A3E6 /* Cocogoose Pro Ultralight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */; };
+		704744F05B214A3A86AE07C1 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */; };
+		847F8C65728A4E1AB1E85624 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */; };
+		D390925A12A344AE96D350D6 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */; };
+		4CF7EB8ABD5A44A88D0FF9F6 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +352,13 @@
 		8604CE43CE874415BF68109B /* ReactNativeLocalization.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeLocalization.xcodeproj; path = "../node_modules/react-native-localization/ReactNativeLocalization.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E76CDB4D65DA43B8A11E0CD6 /* libReactNativeLocalization.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeLocalization.a; sourceTree = "<group>"; };
+		282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Light-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Light-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Thin-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Thin-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Ultralight-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Ultralight-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "NunitoSans-ExtraBold.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; name = "NunitoSans-ExtraLight.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Light.ttf"; path = "../src/assets/fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Regular.ttf"; path = "../src/assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,6 +619,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				5460767F20DB525E00A56851 /* Frameworks */,
 				5460769B20DBA2BA00A56851 /* Recovered References */,
+				6522FEB84A4A4B43A050B863 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -631,6 +645,21 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		6522FEB84A4A4B43A050B863 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */,
+				03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */,
+				2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */,
+				1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */,
+				FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */,
+				A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */,
+				ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1086,6 +1115,13 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				BD9BDD698EFD4A4599A46A10 /* Cocogoose Pro Light-trial.ttf in Resources */,
+				15C6D94319414D0AA735CF99 /* Cocogoose Pro Thin-trial.ttf in Resources */,
+				F4400316FD044DA39078A3E6 /* Cocogoose Pro Ultralight-trial.ttf in Resources */,
+				704744F05B214A3A86AE07C1 /* NunitoSans-ExtraBold.ttf in Resources */,
+				847F8C65728A4E1AB1E85624 /* NunitoSans-ExtraLight.ttf in Resources */,
+				D390925A12A344AE96D350D6 /* NunitoSans-Light.ttf in Resources */,
+				4CF7EB8ABD5A44A88D0FF9F6 /* NunitoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

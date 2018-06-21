@@ -42,6 +42,11 @@
     "prettier-eslint": "^8.2.2",
     "react-test-renderer": "16.0.0"
   },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts"
+    ]
+  },
   "jest": {
     "preset": "react-native"
   },
