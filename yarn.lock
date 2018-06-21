@@ -3432,13 +3432,13 @@ lodash@3.7.x:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.7.0.tgz#3678bd8ab995057c07ade836ed2ef087da811d45"
 
+lodash@4.x.x, lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1:
+  version "4.17.10"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
 lodash@^3.5.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-
-lodash@^4.14.0, lodash@^4.16.6, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
 loglevel-colored-level-prefix@^1.0.0:
   version "1.0.0"
@@ -4332,6 +4332,12 @@ react-native-extended-stylesheet@^0.8.0:
   dependencies:
     css-mediaquery "^0.1.2"
     object-resolve-path "^1.1.0"
+
+react-native-navigation@^1.1.471:
+  version "1.1.471"
+  resolved "https://registry.yarnpkg.com/react-native-navigation/-/react-native-navigation-1.1.471.tgz#8ab400f3047d4a3bccd3af232e44a7a1cd5d3f37"
+  dependencies:
+    lodash "4.x.x"
 
 react-native-safe-area-view@^0.7.0:
   version "0.7.0"

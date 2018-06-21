@@ -10,8 +10,10 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': 0,
     'react/forbid-prop-types': 0,
+    'react/prefer-stateless-function': 0,
     'no-unused-expressions': 0,
     'global-require': 0,
+    'arrow-parens': 0,
     'import/prefer-default-export': 0,
     semi: 0,
     // indent: [2, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
