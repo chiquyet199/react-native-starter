@@ -1,5 +1,5 @@
 import immutable from 'immutable'
-import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data'
+import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data.actions'
 
 const initialState = immutable.fromJS({ text: '' })
 

@@ -747,7 +747,7 @@
 			<tr class="issue">
 	<td><strong class="text-warning">Warning<strong></td>
 	<td>
-		Row 8, Column 5: "Unexpected console statement."
+		Row 7, Column 3: "Unexpected console statement."
 		<a href="http://eslint.org/docs/rules/no-console" target="_blank">no-console</a>
 	</td>
 </tr>
@@ -791,67 +791,92 @@
 
 <tr class="hit bg-success">
 	<td class="line">6</td>
-	<td class="source"><code>const dataReducerHandlers = {</code></td>
-</tr>
-
-<tr class="hit bg-success">
-	<td class="line">7</td>
-	<td class="source"><code>  [FETCH_DATA_FAIL]: (state, payload) =&#62; {</code></td>
+	<td class="source"><code>const fetchDataFailHandler = ({ payload }) =&#62; {</code></td>
 </tr>
 
 <tr class="issue">
 	<td><strong class="text-warning">Warning<strong></td>
 	<td>
-		Row 8, Column 5: "Unexpected console statement."
+		Row 7, Column 3: "Unexpected console statement."
 		<a href="http://eslint.org/docs/rules/no-console" target="_blank">no-console</a>
 	</td>
 </tr><tr class="hit bg-warning">
+	<td class="line">7</td>
+	<td class="source"><code>  console.log(payload)</code></td>
+</tr>
+
+<tr class="hit bg-success">
 	<td class="line">8</td>
-	<td class="source"><code>    console.log(payload)</code></td>
+	<td class="source"><code>}</code></td>
 </tr>
 
 <tr class="hit bg-success">
 	<td class="line">9</td>
-	<td class="source"><code>  },</code></td>
-</tr>
-
-<tr class="hit bg-success">
-	<td class="line">10</td>
-	<td class="source"><code>  [FETCH_DATA_SUCCESS]: (state, payload) =&#62; immutable.fromJS(payload),</code></td>
-</tr>
-
-<tr class="hit bg-success">
-	<td class="line">11</td>
-	<td class="source"><code>}</code></td>
-</tr>
-
-<tr class="hit bg-success">
-	<td class="line">12</td>
 	<td class="source"><code></code></td>
 </tr>
 
 <tr class="hit bg-success">
+	<td class="line">10</td>
+	<td class="source"><code>const fetchDataSuccessHandler = ({ payload }) =&#62; immutable.fromJS(payload)</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">11</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">12</td>
+	<td class="source"><code>const dataReducerHandlers = {</code></td>
+</tr>
+
+<tr class="hit bg-success">
 	<td class="line">13</td>
-	<td class="source"><code>export default (state = initialState, action) =&#62; {</code></td>
+	<td class="source"><code>  [FETCH_DATA_FAIL]: fetchDataFailHandler,</code></td>
 </tr>
 
 <tr class="hit bg-success">
 	<td class="line">14</td>
-	<td class="source"><code>  const reducerHander = dataReducerHandlers[action.type]</code></td>
+	<td class="source"><code>  [FETCH_DATA_SUCCESS]: fetchDataSuccessHandler,</code></td>
 </tr>
 
 <tr class="hit bg-success">
 	<td class="line">15</td>
-	<td class="source"><code>  return reducerHander ? reducerHander(state, action.payload) : state</code></td>
-</tr>
-
-<tr class="hit bg-success">
-	<td class="line">16</td>
 	<td class="source"><code>}</code></td>
 </tr>
 
 <tr class="hit bg-success">
+	<td class="line">16</td>
+	<td class="source"><code></code></td>
+</tr>
+
+<tr class="hit bg-success">
 	<td class="line">17</td>
+	<td class="source"><code>export default (state = initialState, action) =&#62; {</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">18</td>
+	<td class="source"><code>  const { payload, type } = action</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">19</td>
+	<td class="source"><code>  const reducerHander = dataReducerHandlers[type]</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">20</td>
+	<td class="source"><code>  return reducerHander ? reducerHander({ state, payload }) : state</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">21</td>
+	<td class="source"><code>}</code></td>
+</tr>
+
+<tr class="hit bg-success">
+	<td class="line">22</td>
 	<td class="source"><code></code></td>
 </tr>
 

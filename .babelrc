@@ -9,6 +9,7 @@
           "store": "./src/store",
           "actions": "./src/store/actions",
           "reducers": "./src/store/reducers",
+          "selectors": "./src/store/selectors",
           "screens": "./src/screens",
           "assets": "./src/assets",
           "configs": "./src/configs",

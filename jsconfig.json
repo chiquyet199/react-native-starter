@@ -1,9 +1,12 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./src",
-		"paths": {
-			"~/*": ["src/*"],
-			"components/*": ["src/components/*"]
-		}
-	}
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "actions/*": ["src/store/actions/*"],
+      "reducers/*": ["src/store/reducers/*"],
+      "selectors/*": ["src/store/selectors/*"]
+    }
+  }
 }

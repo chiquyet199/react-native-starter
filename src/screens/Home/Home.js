@@ -4,7 +4,9 @@ import { View } from 'react-native'
 import PropTypes from 'prop-types'
 
 import common from 'assets/styles/common'
-import { fetchData } from 'actions/data'
+import { fetchData } from 'actions/data.actions'
+import { getLoadingStatus } from 'store/selectors/common.selectors'
+import { getGreetText } from 'store/selectors/data.selectors'
 import { Container, Greeter, Loading, Header, Row } from 'components'
 
 class Home extends Component {
@@ -58,8 +60,8 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-  isLoading: state.common.toJS().loading,
-  greetText: state.data.toJS().greetText,
+  isLoading: getLoadingStatus(state),
+  greetText: getGreetText(state),
 })
 
 const mapDispatchToProps = dispatch => ({

@@ -1,5 +1,5 @@
 import Api from 'services/api'
-import { toggleLoading } from './common'
+import { toggleLoading } from './common.actions'
 
 export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS'
 export const FETCH_DATA_FAIL = 'FETCH_DATA_FAIL'

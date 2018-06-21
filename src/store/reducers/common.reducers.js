@@ -1,5 +1,5 @@
 import immutable from 'immutable'
-import { LOADING } from 'actions/common'
+import { LOADING } from 'actions/common.actions'
 
 const initialState = immutable.fromJS({
   loading: false,
