@@ -1,13 +1,13 @@
-import immutable from 'immutable'
+import Immutable from 'seamless-immutable'
 import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data.actions'
 
-const initialState = immutable.fromJS({ text: '' })
+const initialState = Immutable.from({ text: '' })
 
 const fetchDataFailHandler = ({ payload }) => {
   console.log(payload)
 }
 
-const fetchDataSuccessHandler = ({ payload }) => immutable.fromJS(payload)
+const fetchDataSuccessHandler = ({ payload }) => Immutable.from(payload)
 
 const dataReducerHandlers = {
   [FETCH_DATA_FAIL]: fetchDataFailHandler,

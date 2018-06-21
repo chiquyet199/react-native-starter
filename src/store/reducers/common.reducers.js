@@ -1,7 +1,7 @@
-import immutable from 'immutable'
+import immutable from 'seamless-immutable'
 import { LOADING } from 'actions/common.actions'
 
-const initialState = immutable.fromJS({
+const initialState = immutable.from({
   loading: false,
 })
 
