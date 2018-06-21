@@ -6,11 +6,12 @@
       {
         "cwd": "babelrc",
         "alias": {
-          "actions": "./src/actions",
+          "store": "./src/store",
+          "actions": "./src/store/actions",
+          "reducers": "./src/store/reducers",
           "screens": "./src/screens",
           "assets": "./src/assets",
           "configs": "./src/configs",
-          "reducers": "./src/reducers",
           "services": "./src/services",
           "components": "./src/components"
         }

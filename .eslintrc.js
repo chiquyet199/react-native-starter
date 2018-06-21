@@ -13,6 +13,7 @@ module.exports = {
     'no-unused-expressions': 0,
     'global-require': 0,
     'import/prefer-default-export': 0,
+    semi: 0,
     // indent: [2, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
     // 'no-tabs': 0,
     // 'no-console': 0,
@@ -23,4 +24,4 @@ module.exports = {
     // 'react/prefer-stateless-function': 0,
     // 'react/no-typos': 0,
   },
-};
+}

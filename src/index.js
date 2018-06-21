@@ -2,7 +2,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import EStyleSheet from 'react-native-extended-stylesheet';
 
-import store from 'configs/store';
+import store from 'store';
 import { Root } from 'configs/routes';
 import styleVariables from 'assets/styles/variables';
 
