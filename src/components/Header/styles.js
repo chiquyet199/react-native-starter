@@ -4,7 +4,7 @@ import { Colors } from 'styles'
 export default StyleSheet.create({
   container: {
     position: 'absolute',
-    backgroundColor: Colors.$primary,
+    backgroundColor: Colors.$orange,
     left: 0,
     top: 0,
     right: 0,
