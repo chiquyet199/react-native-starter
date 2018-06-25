@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -21,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		15C6D94319414D0AA735CF99 /* Cocogoose Pro Thin-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -33,18 +35,17 @@
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactNativeStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeStarterTests.m */; };
-		5460768020DB525E00A56851 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5460767E20DB523800A56851 /* libReactNativeNavigation.a */; };
+		4CF7EB8ABD5A44A88D0FF9F6 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */; };
 		546076C520DBA64F00A56851 /* libReactNativeLocalization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 546076C420DBA2BD00A56851 /* libReactNativeLocalization.a */; };
+		5478438B20E0A8CF00FA0571 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5478438820E0A8C200FA0571 /* libReactNativeNavigation.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		704744F05B214A3A86AE07C1 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		847F8C65728A4E1AB1E85624 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		BD9BDD698EFD4A4599A46A10 /* Cocogoose Pro Light-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */; };
-		15C6D94319414D0AA735CF99 /* Cocogoose Pro Thin-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */; };
-		F4400316FD044DA39078A3E6 /* Cocogoose Pro Ultralight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */; };
-		704744F05B214A3A86AE07C1 /* NunitoSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */; };
-		847F8C65728A4E1AB1E85624 /* NunitoSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */; };
 		D390925A12A344AE96D350D6 /* NunitoSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */; };
-		4CF7EB8ABD5A44A88D0FF9F6 /* NunitoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */; };
+		F4400316FD044DA39078A3E6 /* Cocogoose Pro Ultralight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,19 +273,40 @@
 			remoteGlobalIDString = 9936F32F1F5F2E5B0010BF04;
 			remoteInfo = "privatedata-tvOS";
 		};
-		5460767D20DB523800A56851 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5460764420DB523800A56851 /* ReactNativeNavigation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
-			remoteInfo = ReactNativeNavigation;
-		};
 		546076C320DBA2BD00A56851 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8604CE43CE874415BF68109B /* ReactNativeLocalization.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7B5D9D0A1B6AD0EA00CF3A83;
 			remoteInfo = ReactNativeLocalization;
+		};
+		5478437D20E0A8AB00FA0571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BDC1FC498900052F4D5;
+			remoteInfo = jsinspector;
+		};
+		5478437F20E0A8AB00FA0571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EBF21BFA1FC4989A0052F4D5;
+			remoteInfo = "jsinspector-tvOS";
+		};
+		5478438720E0A8C200FA0571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5478438220E0A8C100FA0571 /* ReactNativeNavigation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8AFADBD1BEE6F3F00A4592D;
+			remoteInfo = ReactNativeNavigation;
+		};
+		5478438920E0A8C200FA0571 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5478438220E0A8C100FA0571 /* ReactNativeNavigation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7B49FEBB1E95090800DEB3EA;
+			remoteInfo = ReactNativeNavigationTests;
 		};
 		5E9157321DD0AC6500FF2AA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -333,6 +355,7 @@
 		00E356EE1AD99517003FC87E /* reactNativeStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactNativeStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* reactNativeStarterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactNativeStarterTests.m; sourceTree = "<group>"; };
+		03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cocogoose Pro Thin-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Thin-trial.ttf"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* reactNativeStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactNativeStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -343,22 +366,21 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactNativeStarter/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactNativeStarter/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraBold.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cocogoose Pro Ultralight-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Ultralight-trial.ttf"; sourceTree = "<group>"; };
+		282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cocogoose Pro Light-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Light-trial.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* reactNativeStarter-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactNativeStarter-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* reactNativeStarter-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeStarter-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5460764420DB523800A56851 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
+		5478438220E0A8C100FA0571 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/lib/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		8604CE43CE874415BF68109B /* ReactNativeLocalization.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeLocalization.xcodeproj; path = "../node_modules/react-native-localization/ReactNativeLocalization.xcodeproj"; sourceTree = "<group>"; };
+		A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Light.ttf"; path = "../src/assets/fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; };
+		ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-Regular.ttf"; path = "../src/assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E76CDB4D65DA43B8A11E0CD6 /* libReactNativeLocalization.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeLocalization.a; sourceTree = "<group>"; };
-		282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Light-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Light-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Thin-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Thin-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose Pro Ultralight-trial.ttf"; path = "../src/assets/fonts/Cocogoose Pro Ultralight-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "NunitoSans-ExtraBold.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; name = "NunitoSans-ExtraLight.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Light.ttf"; path = "../src/assets/fonts/NunitoSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */ = {isa = PBXFileReference; name = "NunitoSans-Regular.ttf"; path = "../src/assets/fonts/NunitoSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "NunitoSans-ExtraLight.ttf"; path = "../src/assets/fonts/NunitoSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,8 +396,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5478438B20E0A8CF00FA0571 /* libReactNativeNavigation.a in Frameworks */,
 				546076C520DBA64F00A56851 /* libReactNativeLocalization.a in Frameworks */,
-				5460768020DB525E00A56851 /* libReactNativeNavigation.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -521,20 +543,14 @@
 				3DAD3EAB1DF850E9000B6D8A /* libcxxreact.a */,
 				3DAD3EAD1DF850E9000B6D8A /* libjschelpers.a */,
 				3DAD3EAF1DF850E9000B6D8A /* libjschelpers.a */,
+				5478437E20E0A8AB00FA0571 /* libjsinspector.a */,
+				5478438020E0A8AB00FA0571 /* libjsinspector-tvOS.a */,
 				5460767120DB523800A56851 /* libthird-party.a */,
 				5460767320DB523800A56851 /* libthird-party.a */,
 				5460767520DB523800A56851 /* libdouble-conversion.a */,
 				5460767720DB523800A56851 /* libdouble-conversion.a */,
 				5460767920DB523800A56851 /* libprivatedata.a */,
 				5460767B20DB523800A56851 /* libprivatedata-tvOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		5460764520DB523800A56851 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5460767E20DB523800A56851 /* libReactNativeNavigation.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -562,6 +578,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		5478438320E0A8C100FA0571 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5478438820E0A8C200FA0571 /* libReactNativeNavigation.a */,
+				5478438A20E0A8C200FA0571 /* ReactNativeNavigationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -569,6 +594,20 @@
 				5E9157351DD0AC6500FF2AA8 /* libRCTAnimation.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6522FEB84A4A4B43A050B863 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */,
+				03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */,
+				2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */,
+				1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */,
+				FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */,
+				A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */,
+				ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
@@ -583,7 +622,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				5460764420DB523800A56851 /* ReactNativeNavigation.xcodeproj */,
+				5478438220E0A8C100FA0571 /* ReactNativeNavigation.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -645,21 +684,6 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
-		};
-		6522FEB84A4A4B43A050B863 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				282B4DDCA3E44867BC3C6DA3 /* Cocogoose Pro Light-trial.ttf */,
-				03B926D4C4E54BA2871ED9F4 /* Cocogoose Pro Thin-trial.ttf */,
-				2126E9F1EF224EDE9EAC2A0F /* Cocogoose Pro Ultralight-trial.ttf */,
-				1F62698BFDBB4EF9A3B1CAF9 /* NunitoSans-ExtraBold.ttf */,
-				FE7D6D00D3774A2B9DB541B1 /* NunitoSans-ExtraLight.ttf */,
-				A19063FA14464A7DB32425FA /* NunitoSans-Light.ttf */,
-				ABA09FA053C248DFA61C6125 /* NunitoSans-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -825,8 +849,8 @@
 					ProjectRef = 8604CE43CE874415BF68109B /* ReactNativeLocalization.xcodeproj */;
 				},
 				{
-					ProductGroup = 5460764520DB523800A56851 /* Products */;
-					ProjectRef = 5460764420DB523800A56851 /* ReactNativeNavigation.xcodeproj */;
+					ProductGroup = 5478438320E0A8C100FA0571 /* Products */;
+					ProjectRef = 5478438220E0A8C100FA0571 /* ReactNativeNavigation.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1050,18 +1074,39 @@
 			remoteRef = 5460767A20DB523800A56851 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		5460767E20DB523800A56851 /* libReactNativeNavigation.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libReactNativeNavigation.a;
-			remoteRef = 5460767D20DB523800A56851 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		546076C420DBA2BD00A56851 /* libReactNativeLocalization.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libReactNativeLocalization.a;
 			remoteRef = 546076C320DBA2BD00A56851 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5478437E20E0A8AB00FA0571 /* libjsinspector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libjsinspector.a;
+			remoteRef = 5478437D20E0A8AB00FA0571 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5478438020E0A8AB00FA0571 /* libjsinspector-tvOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libjsinspector-tvOS.a";
+			remoteRef = 5478437F20E0A8AB00FA0571 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5478438820E0A8C200FA0571 /* libReactNativeNavigation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libReactNativeNavigation.a;
+			remoteRef = 5478438720E0A8C200FA0571 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5478438A20E0A8C200FA0571 /* ReactNativeNavigationTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactNativeNavigationTests.xctest;
+			remoteRef = 5478438920E0A8C200FA0571 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */ = {
@@ -1295,10 +1340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
-					"$(SRCROOT)/../node_modules/react-native-localization",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-localization";
 				INFOPLIST_FILE = reactNativeStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1316,10 +1358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
-					"$(SRCROOT)/../node_modules/react-native-localization",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../node_modules/react-native-localization";
 				INFOPLIST_FILE = reactNativeStarter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (

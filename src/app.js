@@ -19,11 +19,14 @@ class App extends React.Component {
   }
 
   startApp = () => {
-    Navigation.startSingleScreenApp({
-      screen: {
-        screen: routes.Home,
-        title: 'Navigation Bootstrap',
-      },
+    Navigation.events().registerAppLaunchedListener(() => {
+      Navigation.setRoot({
+        root: {
+          component: {
+            name: routes.Home,
+          },
+        },
+      })
     })
   }
 }
