@@ -3,9 +3,7 @@ import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data.actions'
 
 const initialState = Immutable.from({ text: '' })
 
-const fetchDataFailHandler = ({ payload }) => {
-  console.log(payload)
-}
+const fetchDataFailHandler = ({ state, payload }) => ({ ...state, payload })
 
 const fetchDataSuccessHandler = ({ payload }) => Immutable.from(payload)
 

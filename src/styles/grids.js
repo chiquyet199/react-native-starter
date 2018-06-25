@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
   marTopXs: { marginTop: 4 },
@@ -75,4 +75,4 @@ export default StyleSheet.create({
   flex09: { flex: 0.9 },
   row: { flexDirection: 'row' },
   col: { flexDirection: 'column' },
-});
+})

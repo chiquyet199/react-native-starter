@@ -4,11 +4,12 @@ import EStyleSheet from 'react-native-extended-stylesheet'
 
 import store from 'store'
 import routes from 'configs/routes'
-import styleVariables from 'assets/styles/variables'
+import { Colors, Fonts } from 'styles'
 import { Navigation } from 'react-native-navigation'
 import { registerScreens } from './routingRegister'
 
-EStyleSheet.build(styleVariables)
+EStyleSheet.build(Colors)
+EStyleSheet.build(Fonts)
 
 class App extends React.Component {
   constructor(props) {

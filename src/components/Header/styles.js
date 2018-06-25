@@ -1,10 +1,10 @@
 import StyleSheet from 'react-native-extended-stylesheet'
-import styleVariables from 'assets/styles/variables'
+import { Colors } from 'styles'
 
 export default StyleSheet.create({
   container: {
     position: 'absolute',
-    backgroundColor: styleVariables.$primary,
+    backgroundColor: Colors.$primary,
     left: 0,
     top: 0,
     right: 0,

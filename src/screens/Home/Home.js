@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { View } from 'react-native'
 import PropTypes from 'prop-types'
 
-import common from 'assets/styles/common'
+import { Grids } from 'styles'
 import { fetchData } from 'actions/data.actions'
 import { getLoadingStatus } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
@@ -45,7 +45,7 @@ class Home extends Component {
       <Container center>
         <Header onSettingPress={this.onSettingPress} />
         <Greeter greetText={greetText} />
-        <Row rtl style={[common.padVertSm, { flexWrap: 'wrap' }]}>
+        <Row rtl style={[Grids.padVertSm, { flexWrap: 'wrap' }]}>
           <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
           <View style={{ width: 100, height: 20, backgroundColor: 'blue' }} />
           <View style={{ width: 100, height: 40, backgroundColor: 'red' }} />
