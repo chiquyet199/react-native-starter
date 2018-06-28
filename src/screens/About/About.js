@@ -1,12 +1,13 @@
 import React from 'react'
+import { View } from 'react-native'
 
-import { Container, Greeter } from 'components'
+import { Greeter } from 'components'
 
 function About() {
   return (
-    <Container center>
+    <View center>
       <Greeter greetText="I'm chiquyet199" />
-    </Container>
+    </View>
   )
 }
 

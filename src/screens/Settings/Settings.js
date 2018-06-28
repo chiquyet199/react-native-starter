@@ -1,23 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { View } from 'react-native'
 
-import { Container, Greeter } from 'components'
+import { Greeter } from 'components'
 
-const Settings = props => {
-  const { customData } = props.navigation.state.params
+function Settings() {
   return (
-    <Container center>
-      <Greeter greetText={customData} />
-    </Container>
+    <View center>
+      <Greeter greetText="SETTING" />
+    </View>
   )
-}
-
-Settings.propTypes = {
-  navigation: PropTypes.object,
-}
-
-Settings.defaultProps = {
-  navigation: null,
 }
 
 export default Settings

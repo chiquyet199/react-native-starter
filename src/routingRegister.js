@@ -1,7 +1,7 @@
 import React from 'react'
 import routes from 'configs/routes'
 import { Navigation } from 'react-native-navigation'
-import { Home, About, Setting } from 'screens'
+import { Home, About, Settings, SideMenu, Welcome } from 'screens'
 
 export function registerScreens(store, Provider) {
   // HOC to wrap each component
@@ -18,5 +18,7 @@ export function registerScreens(store, Provider) {
 
   Navigation.registerComponent(routes.Home, () => withProvider(Home), store, Provider)
   Navigation.registerComponent(routes.About, () => withProvider(About), store, Provider)
-  Navigation.registerComponent(routes.Setting, () => withProvider(Setting), store, Provider)
+  Navigation.registerComponent(routes.Settings, () => withProvider(Settings), store, Provider)
+  Navigation.registerComponent(routes.SideMenu, () => withProvider(SideMenu), store, Provider)
+  Navigation.registerComponent(routes.Welcome, () => withProvider(Welcome), store, Provider)
 }

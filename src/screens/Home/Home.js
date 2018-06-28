@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { ScrollView, View } from 'react-native'
 
+import routes from 'configs/routes'
+import { navigate, openSideMenu, openMainPage } from 'services/navigation'
 import { fetchData } from 'actions/data.actions'
 import { getLoadingStatus } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
@@ -26,6 +28,10 @@ class Home extends Component {
     this.props.fetchData()
   }
 
+  goToAbout = () => {
+    navigate(routes.About)
+  }
+
   render() {
     const { greetText, isLoading } = this.props
 
@@ -36,7 +42,9 @@ class Home extends Component {
     return (
       <ScrollView>
         <Greeter greetText={greetText} />
-        <Button label="Confirm" />
+        <Button onPress={this.goToAbout} label="Heello" />
+        <Button onPress={openSideMenu} label="Open side menu" />
+        <Button onPress={openMainPage} label="Open main page" />
         <View style={{ display: 'flex', flexDirection: 'row', paddingTop: 20 }}>
           <View style={[Grids.flex1, { padding: 10, backgroundColor: Colors.grey }]} />
           <View style={[Grids.flex1, { padding: 10, backgroundColor: Colors.black }]} />
