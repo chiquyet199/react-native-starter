@@ -1,6 +1,11 @@
 import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
+  marXs: { marginHorizontal: 4, marginVertical: 4 },
+  marSm: { marginHorizontal: 8, marginVertical: 8 },
+  mar: { marginHorizontal: 16, marginVertical: 16 },
+  marMd: { marginHorizontal: 24, marginVertical: 24 },
+  marLg: { marginHorizontal: 32, marginVertical: 32 },
   marTopXs: { marginTop: 4 },
   marTopSm: { marginTop: 8 },
   marTop: { marginTop: 16 },
@@ -32,6 +37,11 @@ export default StyleSheet.create({
   marHorMd: { marginHorizontal: 24 },
   marHorLg: { marginHorizontal: 32 },
 
+  padXs: { marginHorizontal: 4, marginVertical: 4 },
+  padSm: { marginHorizontal: 8, marginVertical: 8 },
+  pad: { marginHorizontal: 16, marginVertical: 16 },
+  padMd: { marginHorizontal: 24, marginVertical: 24 },
+  padLg: { marginHorizontal: 32, marginVertical: 32 },
   padTopXs: { paddingTop: 4 },
   padTopSm: { paddingTop: 8 },
   padTop: { paddingTop: 16 },
