@@ -1,46 +1,11 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Carousel, { Pagination } from 'react-native-snap-carousel'
-import { View, Image, Dimensions, StatusBar } from 'react-native'
+import { View, Dimensions, StatusBar } from 'react-native'
 
-import { Styles, Grids, Colors } from 'styles'
-import { TextFont } from 'components'
 import lang from 'lang'
-// import { openMainPage } from 'services/navigation'
-
-const WelcomeSlide = props => {
-  const { header, subHeader, icon, background } = props
-  const headerStyle = [{}]
-  const subHeaderStyle = [Grids.marTop, { width: '80%' }]
-  const iconStyle = [Grids.marTop, { width: 57, height: 57 }]
-  return (
-    <View>
-      <Image style={[Styles.fullHeight, Styles.fullWidth]} source={background} />
-      <View style={[Styles.absoluteFull, Grids.padLg]}>
-        <View style={[Grids.flex1, { justifyContent: 'center' }]}>
-          <View style={headerStyle}>
-            <TextFont className="white light headline2">{header}</TextFont>
-          </View>
-          <View style={subHeaderStyle}>
-            <TextFont className="white body">{subHeader ? subHeader.toUpperCase() : ''}</TextFont>
-          </View>
-          {icon && <Image style={iconStyle} source={icon} />}
-        </View>
-      </View>
-    </View>
-  )
-}
-
-WelcomeSlide.propTypes = {
-  header: PropTypes.string.isRequired,
-  subHeader: PropTypes.string.isRequired,
-  background: PropTypes.any.isRequired,
-  icon: PropTypes.any,
-}
-
-WelcomeSlide.defaultProps = {
-  icon: null,
-}
+import { Colors } from 'styles'
+import { openMainPage } from 'services/navigation'
+import WelcomeSlide from './WelcomeSlide'
 
 class Welcome extends React.Component {
   state = {
@@ -90,19 +55,29 @@ class Welcome extends React.Component {
     <WelcomeSlide header={item.header} subHeader={item.subHeader} icon={item.icon} background={item.background} />
   )
 
-  onSnapToItem = index => this.setState({ activeSlide: index })
+  setActiveSlide = index => this.setState({ activeSlide: index })
+
+  onLastSlideActive = index => {
+    if (index === this.state.data.length - 1) setTimeout(openMainPage, 3000)
+  }
+
+  onSnapToItem = index => {
+    this.setActiveSlide(index)
+    this.onLastSlideActive(index)
+  }
 
   render() {
+    const { width: viewportWidth } = Dimensions.get('window')
     return (
       <View>
         <StatusBar barStyle="light-content" />
         <Carousel
           data={this.state.data}
           renderItem={this.renderItems}
-          sliderWidth={Dimensions.get('window').width}
-          itemWidth={Dimensions.get('window').width}
+          sliderWidth={viewportWidth}
+          itemWidth={viewportWidth}
+          slideStyle={{ width: viewportWidth }}
           onSnapToItem={this.onSnapToItem}
-          slideStyle={{ width: Dimensions.get('window').width }}
           inactiveSlideOpacity={0.7}
           inactiveSlideScale={1}
         />
