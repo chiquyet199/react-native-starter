@@ -102,7 +102,9 @@ class Welcome extends React.Component {
           sliderWidth={Dimensions.get('window').width}
           itemWidth={Dimensions.get('window').width}
           onSnapToItem={this.onSnapToItem}
-          // callbackOffsetMargin={0}
+          slideStyle={{ width: Dimensions.get('window').width }}
+          inactiveSlideOpacity={0.7}
+          inactiveSlideScale={1}
         />
         {this.pagination}
       </View>
