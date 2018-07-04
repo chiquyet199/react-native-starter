@@ -4,6 +4,7 @@ export default {
   apply: 'apply',
   skip: 'skip',
   save: 'save',
+  home: 'Home',
   greetText: 'Hello from react native starter',
 
   // welcome page

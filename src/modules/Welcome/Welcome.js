@@ -3,7 +3,7 @@ import Carousel, { Pagination } from 'react-native-snap-carousel'
 import { View, Dimensions, StatusBar } from 'react-native'
 
 import lang from 'lang'
-import { Colors } from 'styles'
+import { Styles } from 'styles'
 import { openMainPage } from 'services/navigation'
 import WelcomeSlide from './WelcomeSlide'
 
@@ -33,18 +33,13 @@ class Welcome extends React.Component {
 
   get pagination() {
     const { data, activeSlide } = this.state
-    const dotStyle = {
-      width: 10,
-      height: 10,
-      borderRadius: 5,
-      backgroundColor: Colors.white,
-    }
     return (
       <Pagination
         dotsLength={data.length}
         activeDotIndex={activeSlide}
         containerStyle={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}
-        dotStyle={dotStyle}
+        dotStyle={Styles.activeDotStyle}
+        inactiveDotStyle={Styles.inactiveDotStyle}
         inactiveDotOpacity={0.4}
         inactiveDotScale={0.6}
       />

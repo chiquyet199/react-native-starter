@@ -12,7 +12,7 @@
           "reducers": "./src/store/reducers",
           "selectors": "./src/store/selectors",
           "lang": "./src/lang",
-          "screens": "./src/screens",
+          "modules": "./src/modules",
           "assets": "./src/assets",
           "configs": "./src/configs",
           "services": "./src/services",

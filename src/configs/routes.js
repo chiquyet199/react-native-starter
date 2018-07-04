@@ -1,7 +1,7 @@
 export default {
-  Home: 'cqpro.Home',
-  About: 'cqpro.About',
-  Settings: 'cqpro.Settings',
-  SideMenu: 'cqpro.SideMenu',
-  Welcome: 'cqpro.Welcome',
+  DashBoard: 'foodadvisor.DashBoard',
+  SideMenu: 'foodadvisor.SideMenu',
+  Welcome: 'foodadvisor.Welcome',
+  About: 'foodadvisor.About',
+  Settings: 'foodadvisor.Settings',
 }

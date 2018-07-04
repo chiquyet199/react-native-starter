@@ -18,6 +18,7 @@ module.exports = {
     'arrow-parens': 0,
     'object-curly-newline': 0,
     'import/prefer-default-export': 0,
+    'class-methods-use-this': 0,
     semi: 0,
     // indent: [2, 'tab', { SwitchCase: 1, VariableDeclarator: 1 }],
     // 'no-tabs': 0,

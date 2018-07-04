@@ -83,6 +83,6 @@ export default StyleSheet.create({
   flex07: { flex: 0.7 },
   flex08: { flex: 0.8 },
   flex09: { flex: 0.9 },
-  row: { flexDirection: 'row' },
+  row: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   col: { flexDirection: 'column' },
 })

@@ -1,6 +1,7 @@
 import { Navigation } from 'react-native-navigation'
 import routes from 'configs/routes'
 
+import lang from 'lang'
 import { Colors, Fonts } from 'styles'
 
 const navigate = () => {
@@ -31,17 +32,14 @@ const openMainPage = () => {
                   children: [
                     {
                       component: {
-                        name: routes.Home,
+                        name: routes.DashBoard,
                         passProps: {
                           text: 'This is tab 1',
                           myFunction: () => 'Hello from a function!',
                         },
                         options: {
                           topBar: {
-                            visible: true,
-                            title: {
-                              text: 'React Native Navigation!',
-                            },
+                            visible: false,
                           },
                         },
                       },
@@ -49,7 +47,7 @@ const openMainPage = () => {
                   ],
                   options: {
                     bottomTab: {
-                      title: 'Home',
+                      title: lang.home,
                       icon: require('assets/images/ico-home.png'),
                     },
                     topBar: {
