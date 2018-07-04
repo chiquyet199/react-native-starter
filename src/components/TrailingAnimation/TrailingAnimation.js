@@ -19,6 +19,16 @@ class TrailingAnimation extends React.Component {
     startValue: 0,
   }
 
+  componentDidMount() {
+    this.startAnimation()
+  }
+
+  startAnimation = () => {
+    const toAnimationObject = animatedValue => Animated.spring(animatedValue, { duration: 400, toValue: 1 })
+    const animations = this.animatedValues.map(toAnimationObject)
+    Animated.stagger(100, animations).start()
+  }
+
   newAnimatedValue = (item, idx) => {
     this.animatedValues[idx] = new Animated.Value(this.props.startValue)
   }
@@ -28,7 +38,9 @@ class TrailingAnimation extends React.Component {
   }
 
   toAnimatedElement = (el, idx) => (
-    <Animated.View style={this.props.getAnimatedStyle(this.animatedValues[idx])}>{el}</Animated.View>
+    <Animated.View key={idx} style={this.props.getAnimatedStyle(this.animatedValues[idx])}>
+      {el}
+    </Animated.View>
   )
 
   render() {
