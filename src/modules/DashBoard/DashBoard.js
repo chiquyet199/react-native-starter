@@ -32,7 +32,7 @@ class DashBoard extends Component {
 
   get Header() {
     return (
-      <View style={[Grids.marBot]}>
+      <View>
         <Banner />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
           <Header />
@@ -47,7 +47,7 @@ class DashBoard extends Component {
 
   get TopTenRestaurants() {
     return (
-      <View style={[Grids.marTopLg, Grids.marLeftSm]}>
+      <View style={[Grids.marLeftSm]}>
         <View style={[Grids.row, Grids.marRightSm]}>
           <TextFont className="black headline3">{lang.topTenRestaurants}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
