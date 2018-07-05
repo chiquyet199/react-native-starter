@@ -10,21 +10,27 @@ class TrailingAnimation extends React.Component {
   }
 
   static propTypes = {
-    children: PropTypes.arrayOf(PropTypes.node).isRequired,
     startValue: PropTypes.number,
+    delay: PropTypes.number,
+    duration: PropTypes.number,
+    animationOnMount: PropTypes.bool,
     getAnimatedStyle: PropTypes.func.isRequired,
+    children: PropTypes.arrayOf(PropTypes.node).isRequired,
   }
 
   static defaultProps = {
+    delay: 0,
     startValue: 0,
+    duration: 400,
+    animationOnMount: true,
   }
 
   componentDidMount() {
-    this.startAnimation()
+    this.props.animationOnMount && setTimeout(this.animate, this.props.delay)
   }
 
-  startAnimation = () => {
-    const toAnimationObject = animatedValue => Animated.spring(animatedValue, { duration: 400, toValue: 1 })
+  animate = () => {
+    const toAnimationObject = animatedValue => Animated.spring(animatedValue, { duration: this.props.duration, toValue: 1 })
     const animations = this.animatedValues.map(toAnimationObject)
     Animated.stagger(100, animations).start()
   }

@@ -4,7 +4,7 @@ import { View, Image, TouchableOpacity } from 'react-native'
 
 import { Grids } from 'styles'
 import { openSideMenu } from 'services/navigation'
-import { TextFont } from 'components'
+import { TextFont, Animatable } from 'components'
 
 class Header extends React.Component {
   static propTypes = {
@@ -14,6 +14,19 @@ class Header extends React.Component {
   static defaultProps = {
     title: 'Bangkok',
   }
+
+  getAnimatedStyle = animatedValue => ({
+    opacity: animatedValue,
+    transform: [
+      {
+        // translateX: animatedValue.interpolate({
+        //   inputRange: [0, 1],
+        //   outputRange: [100, 0],
+        // }),
+        scale: animatedValue,
+      },
+    ],
+  })
 
   get BuggerMenu() {
     const buggerMenuStyle = [{ width: 20, height: 20 }]
@@ -52,11 +65,13 @@ class Header extends React.Component {
   render() {
     const headerStyle = [Grids.row, Grids.padSm]
     return (
-      <View style={headerStyle}>
-        {this.BuggerMenu}
-        {this.Title}
-        {this.SearchAndFilter}
-      </View>
+      <Animatable getAnimatedStyle={this.getAnimatedStyle} duration={1000}>
+        <View style={headerStyle}>
+          {this.BuggerMenu}
+          {this.Title}
+          {this.SearchAndFilter}
+        </View>
+      </Animatable>
     )
   }
 }

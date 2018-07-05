@@ -21,6 +21,7 @@ class CategoryFilterSlider extends React.Component {
     return (
       <View style={{ position: 'relative', height: 50 }}>
         <TrailingAnimation
+          delay={1000}
           getAnimatedStyle={this.getAnimatedStyle}
           style={[Grids.row, { paddingHorizontal: 10, position: 'absolute', left: 0, right: 0, top: -25 }]}
         >
