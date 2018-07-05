@@ -21,7 +21,7 @@ class App extends React.Component {
             children: [
               {
                 component: {
-                  name: routes.Welcome,
+                  name: routes.DashBoard,
                   options: { topBar: { visible: false } },
                 },
               },

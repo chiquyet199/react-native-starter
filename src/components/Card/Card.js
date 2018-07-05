@@ -3,17 +3,7 @@ import PropTypes from 'prop-types'
 import { View, Image } from 'react-native'
 
 import { Colors, Grids } from 'styles'
-import TextFont from '../TextFont/TextFont'
-
-const Rating = () => (
-  <View style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-    <Image style={{ width: 10, height: 10 }} source={require('assets/images/ico-star-filled.png')} />
-    <Image style={{ width: 10, height: 10 }} source={require('assets/images/ico-star-filled.png')} />
-    <Image style={{ width: 10, height: 10 }} source={require('assets/images/ico-star-filled.png')} />
-    <Image style={{ width: 10, height: 10 }} source={require('assets/images/ico-star-filled.png')} />
-    <Image style={{ width: 10, height: 10 }} source={require('assets/images/ico-star-empty.png')} />
-  </View>
-)
+import { TextFont, Rating } from 'components'
 
 class Card extends React.Component {
   static propTypes = {
@@ -46,7 +36,7 @@ class Card extends React.Component {
             </TextFont>
           </View>
           <View style={[{ marginTop: 11 }]}>
-            <Rating />
+            <Rating rate={3} />
           </View>
         </View>
         <View style={{ width: '70%', marginTop: 11 }}>
