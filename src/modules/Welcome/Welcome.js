@@ -18,7 +18,7 @@ class Welcome extends React.Component {
         icon: require('assets/images/icon-spoon-fork.png'),
       },
       {
-        header: lang.bestDealOfTheDay,
+        header: lang.bestDealOfTheDayAnd,
         subHeader: lang.easyToPlanYourFoodAndFindBestDeal,
         background: require('assets/images/welcome_bg2.png'),
       },

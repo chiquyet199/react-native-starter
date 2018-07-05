@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { ScrollView, View, StatusBar } from 'react-native'
+import { ScrollView, View, StatusBar, FlatList } from 'react-native'
 
 import routes from 'configs/routes'
+import { Grids } from 'styles'
 import { navigate } from 'services/navigation'
 import { fetchData } from 'actions/data.actions'
 import { getLoadingStatus } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
-import { Header, Banner } from 'components'
+import { Header, Banner, Card, TextFont } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
+import lang from 'lang'
 
 class DashBoard extends Component {
   static propTypes = {
@@ -30,7 +32,7 @@ class DashBoard extends Component {
 
   get Header() {
     return (
-      <View>
+      <View style={[Grids.marBot]}>
         <Banner />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
           <Header />
@@ -44,11 +46,27 @@ class DashBoard extends Component {
   }
 
   get TopTenRestaurants() {
-    return <View />
+    return (
+      <View style={[Grids.marTopLg, Grids.marLeftSm]}>
+        <View style={[Grids.row, Grids.marRightSm]}>
+          <TextFont className="black headline3">{lang.topTenRestaurants}</TextFont>
+          <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
+        </View>
+        <FlatList data={[1, 2, 3]} horizontal renderItem={item => <Card key={item} />} />
+      </View>
+    )
   }
 
   get BestDealsOfTheDay() {
-    return <View />
+    return (
+      <View style={[Grids.marTopLg, Grids.marLeftSm]}>
+        <View style={[Grids.row, Grids.marRightSm]}>
+          <TextFont className="black headline3">{lang.bestDealOfTheDay}</TextFont>
+          <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
+        </View>
+        <FlatList data={[1, 2, 3]} horizontal renderItem={item => <Card key={item} />} />
+      </View>
+    )
   }
 
   render() {

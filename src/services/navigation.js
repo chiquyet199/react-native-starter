@@ -33,10 +33,6 @@ const openMainPage = () => {
                     {
                       component: {
                         name: routes.DashBoard,
-                        passProps: {
-                          text: 'This is tab 1',
-                          myFunction: () => 'Hello from a function!',
-                        },
                         options: {
                           topBar: {
                             visible: false,
@@ -61,7 +57,7 @@ const openMainPage = () => {
                   children: [
                     {
                       component: {
-                        name: routes.Home,
+                        name: routes.DashBoard,
                         passProps: {
                           text: 'This is tab 1',
                           myFunction: () => 'Hello from a function!',
@@ -93,7 +89,7 @@ const openMainPage = () => {
                   children: [
                     {
                       component: {
-                        name: routes.Home,
+                        name: routes.DashBoard,
                         passProps: {
                           text: 'This is tab 1',
                           myFunction: () => 'Hello from a function!',
@@ -169,7 +165,7 @@ const openSideMenu = () => {
           },
           {
             component: {
-              name: routes.Home,
+              name: routes.DashBoard,
             },
           },
         ],
