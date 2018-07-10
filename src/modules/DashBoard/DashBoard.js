@@ -71,7 +71,7 @@ class DashBoard extends Component {
 
   render() {
     return (
-      <ScrollView style={{ marginTop: -20 }}>
+      <ScrollView style={{ marginTop: -20, backgroundColor: '#fafafa' }}>
         <StatusBar barStyle="light-content" />
         {this.Header}
         {this.CategoryFilterSlider}

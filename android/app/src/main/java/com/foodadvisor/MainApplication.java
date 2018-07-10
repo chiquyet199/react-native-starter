@@ -24,6 +24,8 @@ public class MainApplication extends NavigationApplication {
   public List<ReactPackage> createAdditionalReactPackages() {
       return Arrays.<ReactPackage>asList(
           // eg. new VectorIconsPackage()
+          new MainReactPackage(),
+          new ReactNativeLocalizationPackage()
       );
   }
 
@@ -37,7 +39,7 @@ public class MainApplication extends NavigationApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new ReactNativeLocalizationPackage()
+          new ReactNativeLocalizationPackage()
       );
     }
 
