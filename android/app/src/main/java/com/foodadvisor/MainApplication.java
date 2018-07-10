@@ -1,9 +1,8 @@
-package com.reactnativestarter;
+package com.foodadvisor;
 
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.reactnativenavigation.NavigationApplication;
 import com.babisoft.ReactNativeLocalization.ReactNativeLocalizationPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -13,19 +12,7 @@ import com.facebook.soloader.SoLoader;
 import java.util.Arrays;
 import java.util.List;
 
-public class MainApplication extends NavigationApplication implements ReactApplication {
-
-  @Override
-  public boolean isDebug() {
-      return BuildConfig.DEBUG;
-  }
-
-  @Override
-  public List<ReactPackage> createAdditionalReactPackages() {
-      return Arrays.<ReactPackage>asList(
-          // eg. new VectorIconsPackage()
-      );
-  }
+public class MainApplication extends Application implements ReactApplication {
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override

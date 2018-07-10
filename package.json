@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest",
     "lint": "eslint src/** -f node_modules/eslint-detailed-reporter/lib/detailed.js -o report.html",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "build:android": "react-native bundle --dev true --platform android --entry-file index.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug"
   },
   "dependencies": {
     "axios": "^0.17.1",
