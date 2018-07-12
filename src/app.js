@@ -22,7 +22,7 @@ class App extends React.Component {
               {
                 component: {
                   name: routes.Welcome,
-                  options: { topBar: { visible: false } },
+                  options: { topBar: { visible: false, drawBehind: false } },
                 },
               },
             ],
