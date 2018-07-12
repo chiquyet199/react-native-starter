@@ -36,6 +36,7 @@ const openMainPage = () => {
                         options: {
                           topBar: {
                             visible: false,
+                            height: 0,
                           },
                         },
                       },

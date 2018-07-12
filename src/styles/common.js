@@ -25,8 +25,6 @@ export default StyleSheet.create({
     borderColor: Colors.white,
     borderWidth: 1,
     borderRadius: 4,
-    marginLeft: -5,
-    marginRight: -5,
   },
   inactiveDotStyle: {
     width: 8,
@@ -35,7 +33,5 @@ export default StyleSheet.create({
     borderColor: Colors.white,
     borderWidth: 1,
     borderRadius: 4,
-    marginLeft: -5,
-    marginRight: -5,
   },
 })

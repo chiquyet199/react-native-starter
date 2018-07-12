@@ -40,8 +40,8 @@ class Welcome extends React.Component {
         containerStyle={{ position: 'absolute', left: 0, right: 0, bottom: 0 }}
         dotStyle={Styles.activeDotStyle}
         inactiveDotStyle={Styles.inactiveDotStyle}
-        inactiveDotOpacity={0.4}
-        inactiveDotScale={0.6}
+        inactiveDotOpacity={1}
+        inactiveDotScale={1}
       />
     )
   }
