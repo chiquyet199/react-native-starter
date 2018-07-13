@@ -9,6 +9,7 @@ import { TextFont, Animatable } from 'components'
 class Header extends React.Component {
   static propTypes = {
     title: PropTypes.string,
+    parentId: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
@@ -56,7 +57,7 @@ class Header extends React.Component {
   }
 
   onBuggerMenuPress = () => {
-    openSideMenu()
+    openSideMenu(this.props.parentId)
   }
 
   onSearchIconPress = () => {}

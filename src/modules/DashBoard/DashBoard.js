@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { ScrollView, View, StatusBar, FlatList } from 'react-native'
 
+import lang from 'lang'
 import routes from 'configs/routes'
 import { Grids } from 'styles'
 import { navigate } from 'services/navigation'
@@ -11,11 +12,11 @@ import { getLoadingStatus } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
 import { Header, Banner, Card, TextFont } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
-import lang from 'lang'
 
 class DashBoard extends Component {
   static propTypes = {
     fetchData: PropTypes.func,
+    componentId: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
@@ -35,7 +36,7 @@ class DashBoard extends Component {
       <View>
         <Banner />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
-          <Header />
+          <Header parentId={this.props.componentId} />
         </View>
       </View>
     )

@@ -154,22 +154,12 @@ const openMainPage = () => {
   })
 }
 
-const openSideMenu = () => {
-  Navigation.setRoot({
-    root: {
-      bottomTabs: {
-        children: [
-          {
-            component: {
-              name: routes.Setting,
-            },
-          },
-          {
-            component: {
-              name: routes.DashBoard,
-            },
-          },
-        ],
+const openSideMenu = componentId => {
+  Navigation.mergeOptions(componentId, {
+    sideMenu: {
+      left: {
+        visible: true,
+        enable: true,
       },
     },
   })
