@@ -34,4 +34,10 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderRadius: 4,
   },
+  bgWhite: {
+    backgroundColor: Colors.white,
+  },
+  bgBlack: {
+    backgroundColor: Colors.black,
+  },
 })

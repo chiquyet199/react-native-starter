@@ -19,4 +19,13 @@ export default {
   topTenRestaurants: 'Top 10 Restaurants',
   bestDealOfTheDay: 'Best deal of the day',
   viewMore: 'VIEW MORE',
+
+  // side menu
+  myBooking: 'My booking',
+  wishlist: 'Wishlist',
+  myFoodPlan: 'My food plan',
+  newLetterAndPromo: 'Newsletter and promotion',
+  settingLang: 'Setting languages',
+  english: 'English',
+  logout: 'Logout',
 }
