@@ -10,7 +10,7 @@ import MenuItem from './MenuItem'
 class SideMenu extends Component {
   render() {
     return (
-      <View style={[Styles.bgwhite, Grids.flex1, { width: '75%' }]}>
+      <View style={[Styles.bgWhite, Grids.flex1]}>
         <View style={{ height: 170, width: '100%' }}>
           <Image
             style={{ width: '100%', height: '100%' }}
@@ -18,7 +18,7 @@ class SideMenu extends Component {
             source={require('assets/images/side-menu-background.png')}
           />
         </View>
-        <View style={[Styles.bgwhite, Grids.pad]}>
+        <View style={[Styles.bgWhite, Grids.pad]}>
           <MenuItem text={lang.home} icon={require('assets/images/ico-home.png')} />
           <MenuItem text={lang.myBooking} icon={require('assets/images/ico-my-booking.png')} />
           <MenuItem text={lang.wishlist} icon={require('assets/images/ico-wishlist.png')} />

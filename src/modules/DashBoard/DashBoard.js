@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { ScrollView, View, StatusBar, FlatList } from 'react-native'
+import Permission from 'services/permissions'
 
 import lang from 'lang'
 import routes from 'configs/routes'
@@ -23,7 +24,14 @@ class DashBoard extends Component {
     fetchData: null,
   }
 
+  state = { location: 'NOT ANSWERS' }
+
   componentDidMount() {
+    // NativePermission.check('location')
+    // const getCurrentPosition = get(navigator, 'geolocation.getCurrentPosition')
+    // const setCurrentLocation = location => this.setState({ location })
+    // getCurrentPosition(setCurrentLocation)
+    Permission.requestLocationPermission()
     this.props.fetchData()
   }
 
@@ -77,6 +85,7 @@ class DashBoard extends Component {
         {this.Header}
         {this.CategoryFilterSlider}
         {this.TopTenRestaurants}
+        <TextFont className="black">{this.state.location}</TextFont>
         {this.BestDealsOfTheDay}
       </ScrollView>
     )
