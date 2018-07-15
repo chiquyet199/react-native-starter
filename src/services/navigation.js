@@ -12,6 +12,28 @@ const navigate = () => {
   })
 }
 
+const openLandingPage = () => {
+  Navigation.setRoot({
+    root: {
+      stack: {
+        children: [
+          {
+            component: {
+              name: routes.Welcome,
+              options: {
+                topBar: {
+                  visible: false,
+                  height: 0,
+                },
+              },
+            },
+          },
+        ],
+      },
+    },
+  })
+}
+
 const openMainPage = () => {
   Navigation.setRoot({
     root: {
@@ -165,4 +187,4 @@ const openSideMenu = componentId => {
   })
 }
 
-export { navigate, openSideMenu, openMainPage }
+export { navigate, openSideMenu, openMainPage, openLandingPage }

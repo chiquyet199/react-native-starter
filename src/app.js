@@ -2,8 +2,8 @@ import React from 'react'
 import { Provider } from 'react-redux'
 
 import store from 'store'
-import routes from 'configs/routes'
 import { Navigation } from 'react-native-navigation'
+import { openMainPage } from 'services/navigation'
 import { registerScreens } from './routingRegister'
 
 class App extends React.Component {
@@ -15,25 +15,8 @@ class App extends React.Component {
 
   startApp = () => {
     Navigation.events().registerAppLaunchedListener(() => {
-      Navigation.setRoot({
-        root: {
-          stack: {
-            children: [
-              {
-                component: {
-                  name: routes.Welcome,
-                  options: {
-                    topBar: {
-                      visible: false,
-                      height: 0,
-                    },
-                  },
-                },
-              },
-            ],
-          },
-        },
-      })
+      // openLandingPage()
+      openMainPage()
     })
   }
 }

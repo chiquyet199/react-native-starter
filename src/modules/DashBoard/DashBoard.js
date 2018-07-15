@@ -24,13 +24,7 @@ class DashBoard extends Component {
     fetchData: null,
   }
 
-  state = { location: 'NOT ANSWERS' }
-
   componentDidMount() {
-    // NativePermission.check('location')
-    // const getCurrentPosition = get(navigator, 'geolocation.getCurrentPosition')
-    // const setCurrentLocation = location => this.setState({ location })
-    // getCurrentPosition(setCurrentLocation)
     Permission.requestLocationPermission()
     this.props.fetchData()
   }
@@ -61,7 +55,7 @@ class DashBoard extends Component {
           <TextFont className="black headline3">{lang.topTenRestaurants}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
         </View>
-        <FlatList data={[1, 2, 3]} horizontal renderItem={item => <Card key={item} />} />
+        <FlatList data={['1', '2', '3']} horizontal keyExtractor={item => item} renderItem={() => <Card />} />
       </View>
     )
   }
@@ -73,7 +67,7 @@ class DashBoard extends Component {
           <TextFont className="black headline3">{lang.bestDealOfTheDay}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
         </View>
-        <FlatList data={[1, 2, 3]} horizontal renderItem={item => <Card key={item} />} />
+        <FlatList data={['1', '2', '3']} horizontal keyExtractor={item => item} renderItem={() => <Card />} />
       </View>
     )
   }
@@ -85,7 +79,6 @@ class DashBoard extends Component {
         {this.Header}
         {this.CategoryFilterSlider}
         {this.TopTenRestaurants}
-        <TextFont className="black">{this.state.location}</TextFont>
         {this.BestDealsOfTheDay}
       </ScrollView>
     )
