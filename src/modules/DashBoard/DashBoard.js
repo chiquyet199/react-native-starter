@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { ScrollView, View, StatusBar, FlatList } from 'react-native'
-import Permission from 'services/permissions'
+import Location from 'services/location'
 
 import lang from 'lang'
 import routes from 'configs/routes'
@@ -25,7 +25,7 @@ class DashBoard extends Component {
   }
 
   componentDidMount() {
-    Permission.requestLocationPermission()
+    Location.requestPermission()
     this.props.fetchData()
   }
 
