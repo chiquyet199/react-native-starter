@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 
 import store from 'store'
 import { Navigation } from 'react-native-navigation'
-import { openMainPage } from 'services/navigation'
+import { openLandingPage } from 'services/navigation'
 import { registerScreens } from './routingRegister'
 
 class App extends React.Component {
@@ -15,8 +15,8 @@ class App extends React.Component {
 
   startApp = () => {
     Navigation.events().registerAppLaunchedListener(() => {
-      // openLandingPage()
-      openMainPage()
+      openLandingPage()
+      // openMainPage()
     })
   }
 }

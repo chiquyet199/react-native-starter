@@ -7,6 +7,10 @@ module.exports = {
       'babel-module': {},
     },
   },
+  globals: {
+    navigator: true,
+    setTimeout: true,
+  },
   rules: {
     'react/sort-comp': 0,
     'react/jsx-filename-extension': 0,

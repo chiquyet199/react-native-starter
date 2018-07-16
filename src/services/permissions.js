@@ -1,18 +1,18 @@
-import { PermissionsAndroid } from 'react-native'
+import { PermissionsAndroid, Platform } from 'react-native'
+import logger from 'services/logger'
 
 async function requestLocationPermission() {
   try {
-    const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
-      title: 'Access Location',
-      message: "Allow Food Advisor to access this device's location",
-    })
-    if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-      console.log('You can use the location')
+    if (Platform.OS === 'ios') {
+      navigator.geolocation.requestAuthorization()
     } else {
-      console.log('Location permission denied')
+      PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
+        title: 'Access Location',
+        message: "Allow Food Advisor to access this device's location",
+      })
     }
   } catch (err) {
-    console.warn(err)
+    logger.info(err)
   }
 }
 
