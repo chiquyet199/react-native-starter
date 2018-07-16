@@ -80,7 +80,7 @@ const openMainPage = () => {
                   children: [
                     {
                       component: {
-                        name: routes.DashBoard,
+                        name: routes.About,
                         passProps: {
                           text: 'This is tab 1',
                           myFunction: () => 'Hello from a function!',
@@ -112,7 +112,7 @@ const openMainPage = () => {
                   children: [
                     {
                       component: {
-                        name: routes.DashBoard,
+                        name: routes.About,
                         passProps: {
                           text: 'This is tab 1',
                           myFunction: () => 'Hello from a function!',
