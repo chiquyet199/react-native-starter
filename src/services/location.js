@@ -1,31 +1,54 @@
 import { PermissionsAndroid, Platform } from 'react-native'
+import axios from 'axios'
 import logger from 'services/logger'
 
 async function requestPermission() {
   try {
-    navigator.geolocation.setRNConfiguration({ skipPermissionRequests: true })
     if (Platform.OS === 'ios') {
-      navigator.geolocation.getCurrentPosition(res => {
-        console.log(res)
-      })
+      navigator.geolocation.requestAuthorization()
     } else {
-      const result = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
+      await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION, {
         title: 'Access Location',
         message: "Allow Food Advisor to access this device's location",
       })
-      if (result === PermissionsAndroid.RESULTS.GRANTED) {
-        navigator.geolocation.getCurrentPosition(
-          res => {
-            console.log(res)
-          },
-          null,
-          { timeout: 3000, enableHighAccuracy: true },
-        )
-      }
     }
   } catch (err) {
-    logger.info(err)
+    logger.error(err)
   }
 }
 
-export default { requestPermission }
+async function getCurrentLocation() {
+  const asyncAwaitGetCurrentPosition = () =>
+    new Promise((resolve, reject) => {
+      const onSuccess = res => resolve(res.coords)
+      const onFailed = () => reject({})
+      try {
+        navigator.geolocation.getCurrentPosition(onSuccess, onFailed)
+      } catch (err) {
+        logger.info(err)
+        onFailed()
+      }
+    })
+  return asyncAwaitGetCurrentPosition()
+}
+
+async function getAddress(coords) {
+  const myApiKey = 'AIzaSyBPx-WtX075myBrUQ_ACyoKikvUd6cbY4g'
+  const { latitude, longitude } = coords
+  const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${latitude},${longitude}&key=${myApiKey}`
+  const response = await axios.get(url)
+  const { results } = response.data
+  if (results[9]) {
+    const addressComponents = results[9].address_components
+    return {
+      address: {
+        city: addressComponents[0].long_name,
+        country: addressComponents[1].long_name,
+      },
+      formatedAddress: results[0].formatted_address,
+    }
+  }
+  return null
+}
+
+export default { requestPermission, getCurrentLocation, getAddress }

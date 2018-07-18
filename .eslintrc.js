@@ -10,6 +10,7 @@ module.exports = {
   globals: {
     navigator: true,
     setTimeout: true,
+    window: true,
   },
   rules: {
     'react/sort-comp': 0,
@@ -18,6 +19,9 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'no-unused-expressions': 0,
     'global-require': 0,
+    'no-use-before-define': 0,
+    'prefer-promise-reject-errors': 0,
+    'react/no-did-mount-set-state': 0,
     'max-len': 0,
     'arrow-parens': 0,
     'object-curly-newline': 0,

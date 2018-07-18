@@ -2,31 +2,28 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { ScrollView, View, StatusBar, FlatList } from 'react-native'
-import Location from 'services/location'
 
 import lang from 'lang'
 import routes from 'configs/routes'
+import storage, { storageKey } from 'services/storage'
 import { Grids } from 'styles'
 import { navigate } from 'services/navigation'
-import { fetchData } from 'actions/data.actions'
-import { getLoadingStatus } from 'store/selectors/common.selectors'
+import { markedAsSubsequenceUse } from 'store/actions/common.actions'
+import { getLoading, getCurrentLocation } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
 import { Header, Banner, Card, TextFont } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
 
 class DashBoard extends Component {
   static propTypes = {
-    fetchData: PropTypes.func,
     componentId: PropTypes.string.isRequired,
+    currentLocation: PropTypes.object.isRequired,
   }
 
-  static defaultProps = {
-    fetchData: null,
-  }
+  static defaultProps = {}
 
   componentDidMount() {
-    Location.requestPermission()
-    this.props.fetchData()
+    storage.set(storageKey.FIRST_USE, false)
   }
 
   goToAbout = () => {
@@ -34,11 +31,12 @@ class DashBoard extends Component {
   }
 
   get Header() {
+    const city = this.props.currentLocation ? this.props.currentLocation.address.city : ''
     return (
       <View>
         <Banner />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
-          <Header parentId={this.props.componentId} />
+          <Header title={city} parentId={this.props.componentId} />
         </View>
       </View>
     )
@@ -86,12 +84,13 @@ class DashBoard extends Component {
 }
 
 const mapStateToProps = state => ({
-  isLoading: getLoadingStatus(state),
+  isLoading: getLoading(state),
   greetText: getGreetText(state),
+  currentLocation: getCurrentLocation(state),
 })
 
 const mapDispatchToProps = dispatch => ({
-  fetchData: () => dispatch(fetchData()),
+  markedAsSubsequenceUse: () => dispatch(markedAsSubsequenceUse()),
 })
 
 export default connect(

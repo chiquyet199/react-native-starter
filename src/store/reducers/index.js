@@ -6,3 +6,12 @@ export default combineReducers({
   common,
   data,
 })
+
+// const applicationState = {
+//   common: {
+//     isLoading: false,
+//     accessLocationGranted: false,
+//     location: { lat: '', lng: '', city: '' },
+//   },
+//   data: {},
+// }

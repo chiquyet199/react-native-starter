@@ -1,13 +1,21 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import Carousel, { Pagination } from 'react-native-snap-carousel'
 import { View, Dimensions, StatusBar } from 'react-native'
 
 import lang from 'lang'
+import storage, { storageKey } from 'services/storage'
 import { Styles } from 'styles'
+import { setLocation } from 'store/actions/common.actions'
 import { openMainPage } from 'services/navigation'
 import WelcomeSlide from './WelcomeSlide'
 
 class Welcome extends React.Component {
+  static propTypes = {
+    setLocation: PropTypes.func.isRequired,
+  }
+
   state = {
     activeSlide: 0,
     data: [
@@ -29,6 +37,15 @@ class Welcome extends React.Component {
       },
       { header: lang.planYourFood, subHeader: lang.easyToPlanYourFood, background: require('assets/images/welcome_bg4.png') },
     ],
+  }
+
+  async componentDidMount() {
+    const location = await storage.get(storageKey.LATEST_LOCATION)
+    const isFirstUse = await storage.get(storageKey.FIRST_USE)
+    this.props.setLocation(location)
+    if (!isFirstUse && isFirstUse !== null) {
+      openMainPage()
+    }
   }
 
   get pagination() {
@@ -82,4 +99,11 @@ class Welcome extends React.Component {
   }
 }
 
-export default Welcome
+const mapDispatchToProps = dispatch => ({
+  setLocation: location => dispatch(setLocation(location)),
+})
+
+export default connect(
+  null,
+  mapDispatchToProps,
+)(Welcome)

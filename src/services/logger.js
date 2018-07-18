@@ -1,7 +1,3 @@
-import { Alert } from 'react-native'
+const { info, warn, log, error } = console
 
-function info(str) {
-  Alert.alert(str)
-}
-
-export default { info }
+export default { info, warn, log, error }

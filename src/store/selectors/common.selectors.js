@@ -1,5 +1,7 @@
 import { createSelector } from 'reselect'
 
-const getLoading = state => state.common.isLoading
+const loadingSelector = state => state.common.isLoading
+const currentLocationSelector = state => state.common.currentLocation
 
-export const getLoadingStatus = createSelector([getLoading], isLoading => isLoading)
+export const getLoading = createSelector([loadingSelector], isLoading => isLoading)
+export const getCurrentLocation = createSelector([currentLocationSelector], currentLocation => currentLocation)
