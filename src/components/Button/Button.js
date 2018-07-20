@@ -7,7 +7,6 @@ import { TextFont, ClassNameWrapper } from 'components'
 
 const defaultStyle = {
   display: 'flex',
-  flex: 1,
   flexDirection: 'row',
   alignContent: 'center',
   justifyContent: 'center',
@@ -34,9 +33,7 @@ const Button = props => {
       mapperObj={styleMapper}
       renderProps={buttonStyle => (
         <TouchableOpacity style={[defaultStyle, ...buttonStyle]} onPress={onPress}>
-          <TextFont className={`${isWhiteButton ? 'black' : 'white'} regular bodyText textCenter`}>
-            {label}
-          </TextFont>
+          <TextFont className={`${isWhiteButton ? 'black' : 'white'} regular bodyText textCenter`}>{label}</TextFont>
         </TouchableOpacity>
       )}
     />

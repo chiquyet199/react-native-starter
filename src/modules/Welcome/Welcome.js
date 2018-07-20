@@ -44,7 +44,7 @@ class Welcome extends React.Component {
     const isFirstUse = await storage.get(storageKey.FIRST_USE)
     this.props.setLocation(location)
     if (!isFirstUse && isFirstUse !== null) {
-      openMainPage()
+      // openMainPage()
     }
   }
 

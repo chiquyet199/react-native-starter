@@ -8,9 +8,6 @@
         "alias": {
           "store": "./src/store",
           "styles": "./src/styles",
-          "actions": "./src/store/actions",
-          "reducers": "./src/store/reducers",
-          "selectors": "./src/store/selectors",
           "lang": "./src/lang",
           "modules": "./src/modules",
           "assets": "./src/assets",

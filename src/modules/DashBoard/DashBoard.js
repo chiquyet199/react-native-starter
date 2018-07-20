@@ -7,11 +7,11 @@ import lang from 'lang'
 import routes from 'configs/routes'
 import storage, { storageKey } from 'services/storage'
 import { Grids } from 'styles'
-import { navigate } from 'services/navigation'
+import { openRestaurantDetailModal, navigate } from 'services/navigation'
 import { markedAsSubsequenceUse } from 'store/actions/common.actions'
 import { getLoading, getCurrentLocation } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
-import { Header, Banner, Card, TextFont } from 'components'
+import { Header, Banner, Card, TextFont, Button } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
 
 class DashBoard extends Component {
@@ -60,7 +60,7 @@ class DashBoard extends Component {
 
   get BestDealsOfTheDay() {
     return (
-      <View style={[Grids.marTopLg, Grids.marLeftSm]}>
+      <View style={[Grids.marTopLg, Grids.marLeftSm, Grids.marBot]}>
         <View style={[Grids.row, Grids.marRightSm]}>
           <TextFont className="black headline3">{lang.bestDealOfTheDay}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
@@ -77,6 +77,12 @@ class DashBoard extends Component {
         {this.Header}
         {this.CategoryFilterSlider}
         {this.TopTenRestaurants}
+        <Button
+          label="opne"
+          onPress={() => {
+            openRestaurantDetailModal(this.props.componentId)
+          }}
+        />
         {this.BestDealsOfTheDay}
       </ScrollView>
     )

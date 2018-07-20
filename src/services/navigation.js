@@ -187,4 +187,33 @@ const openSideMenu = componentId => {
   })
 }
 
-export { navigate, openSideMenu, openMainPage, openLandingPage }
+const openRestaurantDetailModal = async componentId => {
+  await Navigation.push(componentId, {
+    component: {
+      name: routes.ModalRestaurantDetail,
+      options: {
+        topBar: {
+          visible: false,
+        },
+      },
+    },
+  })
+
+  // await Navigation.showModal({
+  //   stack: {
+  //     children: [
+  //       {
+  //         component: {
+  //           name: routes.About,
+  //         },
+  //       },
+  //     ],
+  //   },
+  // })
+}
+
+const dismissModal = componentId => {
+  Navigation.dismissModal(componentId)
+}
+
+export { navigate, openSideMenu, openMainPage, openLandingPage, openRestaurantDetailModal, dismissModal }

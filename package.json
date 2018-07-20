@@ -44,6 +44,7 @@
     "jest": "21.2.1",
     "precommit-hook": "^3.0.0",
     "prettier-eslint": "^8.2.2",
+    "react-devtools": "^3.2.3",
     "react-test-renderer": "16.0.0"
   },
   "rnpm": {

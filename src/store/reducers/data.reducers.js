@@ -1,5 +1,5 @@
 import Immutable from 'seamless-immutable'
-import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'actions/data.actions'
+import { FETCH_DATA_FAIL, FETCH_DATA_SUCCESS } from 'store/actions/data.actions'
 
 const initialState = Immutable.from({ text: '' })
 

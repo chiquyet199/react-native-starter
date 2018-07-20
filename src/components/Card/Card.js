@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 
+import { openRestaurantDetailModal } from 'services/navigation'
 import { Colors, Grids } from 'styles'
 import { TextFont, Rating } from 'components'
 
@@ -70,9 +71,14 @@ class Card extends React.Component {
     )
   }
 
+  showRestaurantDetail = async () => {
+    await openRestaurantDetailModal()
+  }
+
   render() {
     return (
-      <View
+      <TouchableOpacity
+        onPress={this.showRestaurantDetail}
         style={{
           width: 232,
           marginRight: 11,
@@ -85,7 +91,7 @@ class Card extends React.Component {
         {this.HeaderImage}
         {this.Content}
         {this.CommentIcon}
-      </View>
+      </TouchableOpacity>
     )
   }
 }

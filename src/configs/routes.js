@@ -4,4 +4,5 @@ export default {
   Welcome: 'foodadvisor.Welcome',
   About: 'foodadvisor.About',
   Settings: 'foodadvisor.Settings',
+  ModalRestaurantDetail: 'foodadvisor.ModalRestaurantDetail',
 }

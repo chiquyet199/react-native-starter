@@ -1,5 +1,5 @@
 import { PermissionsAndroid, Platform } from 'react-native'
-import axios from 'axios'
+import api from 'services/api'
 import logger from 'services/logger'
 
 async function requestPermission() {
@@ -36,7 +36,7 @@ async function getAddress(coords) {
   const myApiKey = 'AIzaSyBPx-WtX075myBrUQ_ACyoKikvUd6cbY4g'
   const { latitude, longitude } = coords
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${latitude},${longitude}&key=${myApiKey}`
-  const response = await axios.get(url)
+  const response = await api.get(url)
   const { results } = response.data
   if (results[9]) {
     const addressComponents = results[9].address_components
