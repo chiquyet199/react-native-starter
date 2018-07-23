@@ -4,7 +4,8 @@ import { View, Image, Dimensions } from 'react-native'
 
 import lang from 'lang'
 import { Grids } from 'styles'
-import { TextFont, SliderBanner } from 'components'
+import { TextFont, SliderBanner, Tabs } from 'components'
+import Animatable from '../Animatable/Animatable'
 
 class RestaurantDetail extends React.Component {
   static propTypes = {
@@ -33,7 +34,7 @@ class RestaurantDetail extends React.Component {
     return (
       <View>
         <Image style={{ height: 264, width: viewportWidth }} source={require('assets/images/food-detail.png')} />
-        <View style={[{ position: 'absolute', left: 8, bottom: 50 }]}>
+        <View style={[{ position: 'absolute', left: 16, bottom: 50 }]}>
           <View>
             <TextFont className="grey">{lang.openNow}</TextFont>
             <TextFont className="white">{openHour}</TextFont>
@@ -63,18 +64,43 @@ class RestaurantDetail extends React.Component {
     )
   }
 
+  get content() {
+    const getAnimatedStyle = animatedValue => ({
+      opacity: animatedValue,
+      transform: [
+        {
+          scale: animatedValue.interpolate({ inputRange: [0, 1], outputRange: [0.8, 1] }),
+        },
+      ],
+    })
+    const renderDetail = () => (
+      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+        <TextFont className="black">DETAIL CONTENT</TextFont>
+      </Animatable>
+    )
+    const renderBookTable = () => (
+      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+        <TextFont className="black">BOOK A TABLE CONTENT</TextFont>
+      </Animatable>
+    )
+    const renderDelivery = () => (
+      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+        <TextFont className="black">DELIVERY CONTENT</TextFont>
+      </Animatable>
+    )
+    const data = [
+      { title: 'Detail', renderContent: renderDetail },
+      { title: 'Book a table', renderContent: renderBookTable },
+      { title: 'Delivery', renderContent: renderDelivery },
+    ]
+    return <Tabs data={data} />
+  }
+
   render() {
     return (
       <View style={{ backgroundColor: 'pink' }}>
         {this.detailHeader}
-
-        {/* <BackgroundView
-          style={{ width: 200, height: 200, borderWidth: 2, borderColor: 'blue' }}
-          bgUrl={require('assets/images/banner-1.png')}
-        >
-          <TextFont className="black">{lang.topTenRestaurants}</TextFont>
-          <Button className="orange large" onPress={() => {}} label="aaa" />
-        </BackgroundView> */}
+        {this.content}
       </View>
     )
   }

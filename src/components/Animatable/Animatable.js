@@ -18,7 +18,7 @@ class Animatable extends React.Component {
 
   static defaultProps = {
     startValue: 0,
-    animateOnMount: true,
+    animateOnMount: false,
     children: null,
     duration: 400,
   }
@@ -27,7 +27,14 @@ class Animatable extends React.Component {
     this.props.animateOnMount && this.animate()
   }
 
+  componentWillReceiveProps() {
+    console.log('new props')
+    this.animatedValue.setValue(0)
+    this.animate()
+  }
+
   animate = () => {
+    console.log(this.animatedValue)
     Animated.timing(this.animatedValue, { duration: this.props.duration, toValue: 1 }).start()
   }
 

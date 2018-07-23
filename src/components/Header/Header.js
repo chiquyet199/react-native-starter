@@ -20,10 +20,6 @@ class Header extends React.Component {
     opacity: animatedValue,
     transform: [
       {
-        // translateX: animatedValue.interpolate({
-        //   inputRange: [0, 1],
-        //   outputRange: [100, 0],
-        // }),
         scale: animatedValue,
       },
     ],
@@ -66,7 +62,7 @@ class Header extends React.Component {
   render() {
     const headerStyle = [Grids.row, Grids.padSm]
     return (
-      <Animatable getAnimatedStyle={this.getAnimatedStyle} duration={1000}>
+      <Animatable getAnimatedStyle={this.getAnimatedStyle} animateOnMount duration={1000}>
         <View style={headerStyle}>
           {this.BuggerMenu}
           {this.Title}
