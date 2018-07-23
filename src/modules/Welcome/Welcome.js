@@ -70,7 +70,7 @@ class Welcome extends React.Component {
   setActiveSlide = index => this.setState({ activeSlide: index })
 
   onLastSlideActive = index => {
-    if (index === this.state.data.length - 1) setTimeout(openMainPage, 3000)
+    if (index === this.state.data.length - 1) setTimeout(openMainPage, 2000)
   }
 
   onSnapToItem = index => {

@@ -4,7 +4,7 @@ import { View, Image, TouchableOpacity } from 'react-native'
 
 import { openRestaurantDetailModal } from 'services/navigation'
 import { Colors, Grids } from 'styles'
-import { TextFont, Rating } from 'components'
+import { TextFont, Rating, BackgroundView } from 'components'
 
 class Card extends React.Component {
   static propTypes = {
@@ -17,12 +17,13 @@ class Card extends React.Component {
 
   get HeaderImage() {
     return (
-      <View style={{ height: 139, backgroundColor: 'black', position: 'relative' }}>
-        <Image
-          source={require('assets/images/restaurant1.png')}
-          style={{ width: 240, height: 139, position: 'absolute', top: 0, left: -5 }}
-        />
-      </View>
+      <BackgroundView style={{ height: 139, backgroundColor: 'black' }} bgUrl={require('assets/images/restaurant1.png')} />
+      // <View style={{ height: 139, backgroundColor: 'black', position: 'relative' }}>
+      //   <Image
+      //     source={require('assets/images/restaurant1.png')}
+      //     style={{ width: 240, height: 139, position: 'absolute', top: 0, left: -5 }}
+      //   />
+      // </View>
     )
   }
 

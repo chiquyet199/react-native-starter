@@ -28,4 +28,8 @@ export default {
   settingLang: 'Setting languages',
   english: 'English',
   logout: 'Logout',
+
+  // detail page
+  openNow: 'open now',
+  promotion: 'Promotion',
 }

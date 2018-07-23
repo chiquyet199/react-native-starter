@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { ScrollView, View, StatusBar, FlatList } from 'react-native'
+import { ScrollView, View, StatusBar, FlatList, Image, Dimensions } from 'react-native'
 
 import lang from 'lang'
 import routes from 'configs/routes'
@@ -11,7 +11,7 @@ import { openRestaurantDetailModal, navigate } from 'services/navigation'
 import { markedAsSubsequenceUse } from 'store/actions/common.actions'
 import { getLoading, getCurrentLocation } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
-import { Header, Banner, Card, TextFont, Button } from 'components'
+import { Header, SliderBanner, Card, TextFont, Button } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
 
 class DashBoard extends Component {
@@ -30,11 +30,20 @@ class DashBoard extends Component {
     navigate(routes.About)
   }
 
+  renderBannerItem = () => {
+    const { width: viewportWidth } = Dimensions.get('window')
+    return (
+      <View>
+        <Image data={[1, 2, 3]} style={{ height: 193, width: viewportWidth }} source={require('assets/images/banner-1.png')} />
+      </View>
+    )
+  }
+
   get Header() {
     const city = this.props.currentLocation ? this.props.currentLocation.address.city : ''
     return (
       <View>
-        <Banner />
+        <SliderBanner renderItems={this.renderBannerItem} />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
           <Header title={city} parentId={this.props.componentId} />
         </View>

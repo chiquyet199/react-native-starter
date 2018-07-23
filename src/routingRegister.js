@@ -1,7 +1,7 @@
 import React from 'react'
 import routes from 'configs/routes'
 import { Navigation } from 'react-native-navigation'
-import { ModalRestaurantDetail } from 'components'
+import { RestaurantDetail } from 'components'
 import { DashBoard, About, Settings, SideMenu, Welcome } from 'modules'
 
 export function registerScreens(store, Provider) {
@@ -22,5 +22,5 @@ export function registerScreens(store, Provider) {
   Navigation.registerComponent(routes.Settings, () => withProvider(Settings), store, Provider)
   Navigation.registerComponent(routes.SideMenu, () => withProvider(SideMenu), store, Provider)
   Navigation.registerComponent(routes.Welcome, () => withProvider(Welcome), store, Provider)
-  Navigation.registerComponent(routes.ModalRestaurantDetail, () => withProvider(ModalRestaurantDetail), store, Provider)
+  Navigation.registerComponent(routes.RestaurantDetail, () => withProvider(RestaurantDetail), store, Provider)
 }

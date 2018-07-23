@@ -19,7 +19,7 @@ const openLandingPage = () => {
         children: [
           {
             component: {
-              name: routes.Welcome,
+              name: routes.RestaurantDetail,
               options: {
                 topBar: {
                   visible: false,
@@ -190,7 +190,7 @@ const openSideMenu = componentId => {
 const openRestaurantDetailModal = async componentId => {
   await Navigation.push(componentId, {
     component: {
-      name: routes.ModalRestaurantDetail,
+      name: routes.RestaurantDetail,
       options: {
         topBar: {
           visible: false,

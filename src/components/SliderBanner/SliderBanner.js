@@ -1,16 +1,25 @@
 import React from 'react'
-import { View, Image, Dimensions } from 'react-native'
+import PropTypes from 'prop-types'
+import { View, Dimensions } from 'react-native'
 import Carousel, { Pagination } from 'react-native-snap-carousel'
 
 import { Styles } from 'styles'
 
-class Banner extends React.Component {
+class SliderBanner extends React.Component {
+  static propTypes = {
+    data: PropTypes.array.isRequired,
+    renderItems: PropTypes.func.isRequired,
+  }
+
+  static defaultProps = {}
+
   state = {
     activeSlide: 0,
-    data: [1, 2, 3],
   }
+
   get pagination() {
-    const { data, activeSlide } = this.state
+    const { activeSlide } = this.state
+    const { data } = this.props
     return (
       <Pagination
         dotsLength={data.length}
@@ -23,27 +32,20 @@ class Banner extends React.Component {
       />
     )
   }
-  renderItems = () => {
-    const { width: viewportWidth } = Dimensions.get('window')
-    return (
-      <View>
-        <Image style={{ height: 193, width: viewportWidth }} source={require('assets/images/banner-1.png')} />
-      </View>
-    )
-  }
 
   setActiveSlide = index => this.setState({ activeSlide: index })
 
   onSnapToItem = index => {
     this.setActiveSlide(index)
   }
+
   render() {
     const { width: viewportWidth } = Dimensions.get('window')
     return (
       <View>
         <Carousel
-          data={this.state.data}
-          renderItem={this.renderItems}
+          data={this.props.data}
+          renderItem={this.props.renderItems}
           sliderWidth={viewportWidth}
           itemWidth={viewportWidth}
           slideStyle={{ width: viewportWidth }}
@@ -57,4 +59,4 @@ class Banner extends React.Component {
   }
 }
 
-export default Banner
+export default SliderBanner
