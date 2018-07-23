@@ -4,8 +4,8 @@ import { View, Image, Dimensions } from 'react-native'
 
 import lang from 'lang'
 import { Grids } from 'styles'
-import { TextFont, SliderBanner, Tabs } from 'components'
-import Animatable from '../Animatable/Animatable'
+import { fadeAndScale } from 'configs/animations'
+import { Animatable, TextFont, SliderBanner, Tabs } from 'components'
 
 class RestaurantDetail extends React.Component {
   static propTypes = {
@@ -54,37 +54,35 @@ class RestaurantDetail extends React.Component {
       <View style={{ height: 264 }}>
         <SliderBanner data={[1, 2, 3]} renderItems={this.renderBannerItem} />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
-          <View style={[Grids.row, Grids.padSm]}>
-            <Image style={{ width: 16, height: 16 }} resizeMode="contain" source={require('assets/images/ico-back.png')} />
-            <TextFont className="headline3 white">{restaurantName}</TextFont>
-            <Image style={{ width: 16, height: 16 }} resizeMode="contain" source={require('assets/images/ico-heart-empty.png')} />
-          </View>
+          <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={400}>
+            <View style={[Grids.row, Grids.padSm]}>
+              <Image style={{ width: 16, height: 16 }} resizeMode="contain" source={require('assets/images/ico-back.png')} />
+              <TextFont className="headline3 white">{restaurantName}</TextFont>
+              <Image
+                style={{ width: 16, height: 16 }}
+                resizeMode="contain"
+                source={require('assets/images/ico-heart-empty.png')}
+              />
+            </View>
+          </Animatable>
         </View>
       </View>
     )
   }
 
   get content() {
-    const getAnimatedStyle = animatedValue => ({
-      opacity: animatedValue,
-      transform: [
-        {
-          scale: animatedValue.interpolate({ inputRange: [0, 1], outputRange: [0.8, 1] }),
-        },
-      ],
-    })
     const renderDetail = () => (
-      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
         <TextFont className="black">DETAIL CONTENT</TextFont>
       </Animatable>
     )
     const renderBookTable = () => (
-      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
         <TextFont className="black">BOOK A TABLE CONTENT</TextFont>
       </Animatable>
     )
     const renderDelivery = () => (
-      <Animatable animateOnMount getAnimatedStyle={getAnimatedStyle} duration={1000}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
         <TextFont className="black">DELIVERY CONTENT</TextFont>
       </Animatable>
     )
@@ -93,7 +91,7 @@ class RestaurantDetail extends React.Component {
       { title: 'Book a table', renderContent: renderBookTable },
       { title: 'Delivery', renderContent: renderDelivery },
     ]
-    return <Tabs data={data} />
+    return <Tabs delayAnimation={300} data={data} />
   }
 
   render() {

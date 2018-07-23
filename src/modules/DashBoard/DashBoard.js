@@ -11,7 +11,7 @@ import { openRestaurantDetailModal, navigate } from 'services/navigation'
 import { markedAsSubsequenceUse } from 'store/actions/common.actions'
 import { getLoading, getCurrentLocation } from 'store/selectors/common.selectors'
 import { getGreetText } from 'store/selectors/data.selectors'
-import { Header, SliderBanner, Card, TextFont, Button } from 'components'
+import { Header, SliderBanner, Card, TextFont } from 'components'
 import { CategoryFilterSlider } from 'modules/DashBoard/components'
 
 class DashBoard extends Component {
@@ -43,7 +43,7 @@ class DashBoard extends Component {
     const city = this.props.currentLocation ? this.props.currentLocation.address.city : ''
     return (
       <View>
-        <SliderBanner renderItems={this.renderBannerItem} />
+        <SliderBanner data={[1, 2, 3]} renderItems={this.renderBannerItem} />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
           <Header title={city} parentId={this.props.componentId} />
         </View>
@@ -56,25 +56,37 @@ class DashBoard extends Component {
   }
 
   get TopTenRestaurants() {
+    const onCardPress = () => openRestaurantDetailModal(this.props.componentId)
     return (
       <View style={[Grids.marLeftSm]}>
         <View style={[Grids.row, Grids.marRightSm]}>
           <TextFont className="black headline3">{lang.topTenRestaurants}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
         </View>
-        <FlatList data={['1', '2', '3']} horizontal keyExtractor={item => item} renderItem={() => <Card />} />
+        <FlatList
+          data={['1', '2', '3']}
+          horizontal
+          keyExtractor={item => item}
+          renderItem={() => <Card onPress={onCardPress} />}
+        />
       </View>
     )
   }
 
   get BestDealsOfTheDay() {
+    const onCardPress = () => openRestaurantDetailModal(this.props.componentId)
     return (
       <View style={[Grids.marTopLg, Grids.marLeftSm, Grids.marBot]}>
         <View style={[Grids.row, Grids.marRightSm]}>
           <TextFont className="black headline3">{lang.bestDealOfTheDay}</TextFont>
           <TextFont className="black bodyText light">{lang.viewMore}</TextFont>
         </View>
-        <FlatList data={['1', '2', '3']} horizontal keyExtractor={item => item} renderItem={() => <Card />} />
+        <FlatList
+          data={['1', '2', '3']}
+          horizontal
+          keyExtractor={item => item}
+          renderItem={() => <Card onPress={onCardPress} />}
+        />
       </View>
     )
   }
@@ -86,12 +98,6 @@ class DashBoard extends Component {
         {this.Header}
         {this.CategoryFilterSlider}
         {this.TopTenRestaurants}
-        <Button
-          label="opne"
-          onPress={() => {
-            openRestaurantDetailModal(this.props.componentId)
-          }}
-        />
         {this.BestDealsOfTheDay}
       </ScrollView>
     )

@@ -1,28 +1,17 @@
 import React from 'react'
 import { View } from 'react-native'
 
-import { Icon, TrailingAnimation } from 'components'
 import { Grids } from 'styles'
+import { fadeAndSlideup } from 'configs/animations'
+import { Icon, TrailingAnimation } from 'components'
 
 class CategoryFilterSlider extends React.Component {
-  getAnimatedStyle = animatedValue => ({
-    opacity: animatedValue,
-    transform: [
-      {
-        translateY: animatedValue.interpolate({
-          inputRange: [0, 1],
-          outputRange: [30, 0],
-        }),
-      },
-    ],
-  })
-
   render() {
     return (
       <View style={{ position: 'relative', height: 50 }}>
         <TrailingAnimation
           delay={1000}
-          getAnimatedStyle={this.getAnimatedStyle}
+          getAnimatedStyle={fadeAndSlideup}
           style={[Grids.row, { paddingHorizontal: 10, position: 'absolute', left: 0, right: 0, top: -25 }]}
         >
           <Icon src={require('assets/images/ico-coffee.png')} />

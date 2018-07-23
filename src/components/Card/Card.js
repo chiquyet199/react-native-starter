@@ -8,6 +8,7 @@ import { TextFont, Rating, BackgroundView } from 'components'
 
 class Card extends React.Component {
   static propTypes = {
+    onPress: PropTypes.func.isRequired,
     title: PropTypes.string,
   }
 
@@ -16,15 +17,7 @@ class Card extends React.Component {
   }
 
   get HeaderImage() {
-    return (
-      <BackgroundView style={{ height: 139, backgroundColor: 'black' }} bgUrl={require('assets/images/restaurant1.png')} />
-      // <View style={{ height: 139, backgroundColor: 'black', position: 'relative' }}>
-      //   <Image
-      //     source={require('assets/images/restaurant1.png')}
-      //     style={{ width: 240, height: 139, position: 'absolute', top: 0, left: -5 }}
-      //   />
-      // </View>
-    )
+    return <BackgroundView style={{ height: 139, backgroundColor: 'black' }} bgUrl={require('assets/images/restaurant1.png')} />
   }
 
   get Content() {
@@ -79,7 +72,7 @@ class Card extends React.Component {
   render() {
     return (
       <TouchableOpacity
-        onPress={this.showRestaurantDetail}
+        onPress={this.props.onPress}
         style={{
           width: 232,
           marginRight: 11,

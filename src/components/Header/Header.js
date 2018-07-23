@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { View, Image, TouchableOpacity } from 'react-native'
 
 import { Grids } from 'styles'
+import { fadeAndScale } from 'configs/animations'
 import { openSideMenu } from 'services/navigation'
 import { TextFont, Animatable } from 'components'
 
@@ -15,15 +16,6 @@ class Header extends React.Component {
   static defaultProps = {
     title: 'Bangkok',
   }
-
-  getAnimatedStyle = animatedValue => ({
-    opacity: animatedValue,
-    transform: [
-      {
-        scale: animatedValue,
-      },
-    ],
-  })
 
   get BuggerMenu() {
     const buggerMenuStyle = [{ width: 20, height: 20 }]
@@ -62,7 +54,7 @@ class Header extends React.Component {
   render() {
     const headerStyle = [Grids.row, Grids.padSm]
     return (
-      <Animatable getAnimatedStyle={this.getAnimatedStyle} animateOnMount duration={1000}>
+      <Animatable getAnimatedStyle={fadeAndScale} animateOnMount duration={1000}>
         <View style={headerStyle}>
           {this.BuggerMenu}
           {this.Title}

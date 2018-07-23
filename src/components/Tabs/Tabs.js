@@ -1,17 +1,21 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, TouchableOpacity } from 'react-native'
-import { TextFont } from 'components'
-import grids from 'styles/grids'
+
+import { Grids } from 'styles'
+import { fadeAndSlideLeft } from 'configs/animations'
+import { TextFont, Animatable } from 'components'
 import TabIndicator from './TabIndicator'
 
 class Tabs extends Component {
   static propTypes = {
+    delayAnimation: PropTypes.number,
     data: PropTypes.array.isRequired,
     activeTabIdx: PropTypes.number,
   }
 
   static defaultProps = {
+    delayAnimation: 0,
     activeTabIdx: 0,
   }
 
@@ -28,7 +32,7 @@ class Tabs extends Component {
       this.setState({ activeTabIdx: idx })
     }
     return (
-      <TouchableOpacity onPress={updateActiveTab} hitSlop={{ top: 16, right: 16, bottom: 16, left: 16 }}>
+      <TouchableOpacity key={title} onPress={updateActiveTab} hitSlop={{ top: 16, right: 16, bottom: 16, left: 16 }}>
         {renderTitle ? (
           renderTitle(item, idx)
         ) : (
@@ -44,12 +48,14 @@ class Tabs extends Component {
   }
 
   render() {
-    const { data } = this.props
+    const { data, delayAnimation } = this.props
     const { activeTabIdx } = this.state
     return (
       <View style={{ backgroundColor: 'white' }}>
         <View>
-          <View style={[grids.row, grids.pad]}>{data.map(this.renderTitle)}</View>
+          <Animatable delay={delayAnimation} animateOnMount getAnimatedStyle={fadeAndSlideLeft} duration={400}>
+            <View style={[Grids.row, Grids.pad]}>{data.map(this.renderTitle)}</View>
+          </Animatable>
           <View style={{ backgroundColor: 'grey', height: 1, width: '100%' }} />
           <TabIndicator
             activeTabIdx={activeTabIdx}

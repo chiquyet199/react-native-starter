@@ -9,8 +9,12 @@ const styles = StyleSheet.create({
 
 class BackgroundView extends Component {
   static propTypes = {
-    children: PropTypes.any.isRequired,
-    bgUrl: PropTypes.object.isRequired,
+    children: PropTypes.any,
+    bgUrl: PropTypes.any.isRequired,
+  }
+
+  static defaultProps = {
+    children: null,
   }
 
   render() {

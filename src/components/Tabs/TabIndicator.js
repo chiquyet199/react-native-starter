@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { View, Dimensions } from 'react-native'
+
 import { Animatable } from 'components'
 
 class TabIndicator extends React.Component {
