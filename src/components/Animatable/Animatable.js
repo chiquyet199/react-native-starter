@@ -13,6 +13,7 @@ class Animatable extends React.Component {
     startValue: PropTypes.number,
     getAnimatedStyle: PropTypes.func.isRequired,
     animateOnMount: PropTypes.bool,
+    animateNewProps: PropTypes.bool,
     duration: PropTypes.number,
     delay: PropTypes.number,
   }
@@ -20,6 +21,7 @@ class Animatable extends React.Component {
   static defaultProps = {
     startValue: 0,
     animateOnMount: false,
+    animateNewProps: false,
     children: null,
     duration: 400,
     delay: 0,
@@ -30,8 +32,10 @@ class Animatable extends React.Component {
   }
 
   componentWillReceiveProps() {
-    this.animatedValue.setValue(0)
-    this.animate()
+    if (this.props.animateNewProps) {
+      this.animatedValue.setValue(0)
+      this.animate()
+    }
   }
 
   animate = () => {

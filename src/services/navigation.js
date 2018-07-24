@@ -211,9 +211,12 @@ const openRestaurantDetailModal = async componentId => {
   //   },
   // })
 }
+const pop = async componentId => {
+  await Navigation.pop(componentId)
+}
 
 const dismissModal = componentId => {
   Navigation.dismissModal(componentId)
 }
 
-export { navigate, openSideMenu, openMainPage, openLandingPage, openRestaurantDetailModal, dismissModal }
+export { navigate, openSideMenu, openMainPage, openLandingPage, openRestaurantDetailModal, dismissModal, pop }

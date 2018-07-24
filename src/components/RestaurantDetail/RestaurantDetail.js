@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { View, Image, Dimensions } from 'react-native'
+import { View, Image, Dimensions, TouchableOpacity } from 'react-native'
 
 import lang from 'lang'
+import { pop } from 'services/navigation'
 import { Grids } from 'styles'
 import { fadeAndScale } from 'configs/animations'
 import { Animatable, TextFont, SliderBanner, Tabs } from 'components'
@@ -10,7 +11,7 @@ import { Animatable, TextFont, SliderBanner, Tabs } from 'components'
 class RestaurantDetail extends React.Component {
   static propTypes = {
     restaurant: PropTypes.object,
-    // componentId: PropTypes.string.isRequired,
+    componentId: PropTypes.string.isRequired,
     // restaurantId: PropTypes.string.isRequired,
     // getRestaurantData: PropTypes.func,
   }
@@ -50,13 +51,16 @@ class RestaurantDetail extends React.Component {
 
   get detailHeader() {
     const { restaurantName } = this.props.restaurant
+    const backToDashboard = () => pop(this.props.componentId)
     return (
       <View style={{ height: 264 }}>
         <SliderBanner data={[1, 2, 3]} renderItems={this.renderBannerItem} />
         <View style={{ position: 'absolute', top: 16, left: 0, right: 0 }}>
-          <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={400}>
+          <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={800}>
             <View style={[Grids.row, Grids.padSm]}>
-              <Image style={{ width: 16, height: 16 }} resizeMode="contain" source={require('assets/images/ico-back.png')} />
+              <TouchableOpacity onPress={backToDashboard}>
+                <Image style={{ width: 16, height: 16 }} resizeMode="contain" source={require('assets/images/ico-back.png')} />
+              </TouchableOpacity>
               <TextFont className="headline3 white">{restaurantName}</TextFont>
               <Image
                 style={{ width: 16, height: 16 }}
@@ -72,17 +76,17 @@ class RestaurantDetail extends React.Component {
 
   get content() {
     const renderDetail = () => (
-      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={650}>
         <TextFont className="black">DETAIL CONTENT</TextFont>
       </Animatable>
     )
     const renderBookTable = () => (
-      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={650}>
         <TextFont className="black">BOOK A TABLE CONTENT</TextFont>
       </Animatable>
     )
     const renderDelivery = () => (
-      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={500}>
+      <Animatable animateOnMount getAnimatedStyle={fadeAndScale} duration={1000} delay={650}>
         <TextFont className="black">DELIVERY CONTENT</TextFont>
       </Animatable>
     )
@@ -91,7 +95,7 @@ class RestaurantDetail extends React.Component {
       { title: 'Book a table', renderContent: renderBookTable },
       { title: 'Delivery', renderContent: renderDelivery },
     ]
-    return <Tabs delayAnimation={300} data={data} />
+    return <Tabs delayAnimation={500} data={data} />
   }
 
   render() {

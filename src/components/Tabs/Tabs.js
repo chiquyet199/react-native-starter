@@ -23,6 +23,11 @@ class Tabs extends Component {
     activeTabIdx: this.props.activeTabIdx,
   }
 
+  componentDidMount() {
+    console.log('mount tabs')
+    setTimeout(this.animatableTitle.animate, this.props.delayAnimation)
+  }
+
   renderTitle = (item, idx) => {
     const { activeTabIdx } = this.state
     const { title, renderTitle } = item
@@ -48,12 +53,12 @@ class Tabs extends Component {
   }
 
   render() {
-    const { data, delayAnimation } = this.props
+    const { data } = this.props
     const { activeTabIdx } = this.state
     return (
       <View style={{ backgroundColor: 'white' }}>
         <View>
-          <Animatable delay={delayAnimation} animateOnMount getAnimatedStyle={fadeAndSlideLeft} duration={400}>
+          <Animatable ref={node => (this.animatableTitle = node)} getAnimatedStyle={fadeAndSlideLeft} duration={400}>
             <View style={[Grids.row, Grids.pad]}>{data.map(this.renderTitle)}</View>
           </Animatable>
           <View style={{ backgroundColor: 'grey', height: 1, width: '100%' }} />

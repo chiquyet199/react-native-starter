@@ -22,6 +22,7 @@ module.exports = {
     'no-use-before-define': 0,
     'prefer-promise-reject-errors': 0,
     'react/no-did-mount-set-state': 0,
+    'no-return-assign': 0,
     'max-len': 0,
     'arrow-parens': 0,
     'object-curly-newline': 0,

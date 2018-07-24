@@ -2,7 +2,7 @@ export const fadeAndScale = animatedValue => ({
   opacity: animatedValue,
   transform: [
     {
-      scale: animatedValue.interpolate({ inputRange: [0, 1], outputRange: [0.8, 1] }),
+      scale: animatedValue.interpolate({ inputRange: [0, 1], outputRange: [0.7, 1] }),
     },
   ],
 })

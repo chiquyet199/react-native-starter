@@ -34,7 +34,7 @@ class TabIndicator extends React.Component {
   render() {
     const { width: viewportWidth } = Dimensions.get('window')
     return (
-      <Animatable getAnimatedStyle={this.getAnimatedStyle} duration={300}>
+      <Animatable animateNewProps getAnimatedStyle={this.getAnimatedStyle} duration={300}>
         <View style={{ position: 'absolute', width: viewportWidth / 3, bottom: -1, height: 3, backgroundColor: 'black' }} />
       </Animatable>
     )
