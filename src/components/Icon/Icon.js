@@ -1,24 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Image, TouchableOpacity } from 'react-native'
-import { Colors } from 'styles'
+import { Colors, Styles } from 'styles'
 
 const Icon = props => {
   const { src, onPress } = props
   return (
     <TouchableOpacity
-      style={{
-        width: 50,
-        height: 50,
-        backgroundColor: Colors.white,
-        borderRadius: 25,
-        shadowColor: Colors.grey,
-        shadowOffset: { width: 1, height: 1 },
-        shadowOpacity: 0.5,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
+      style={[
+        Styles.borderShadow,
+        {
+          width: 50,
+          height: 50,
+          borderRadius: 25,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          backgroundColor: Colors.white,
+        },
+      ]}
       onPress={onPress}
     >
       <Image style={{ width: 25, height: 25 }} resizeMode="contain" source={src} />

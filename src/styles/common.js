@@ -1,4 +1,4 @@
-import { StyleSheet, Dimensions } from 'react-native'
+import { StyleSheet, Dimensions, Platform } from 'react-native'
 import Colors from './colors'
 
 const DEVICE_WIDTH = Dimensions.get('window').width
@@ -39,5 +39,12 @@ export default StyleSheet.create({
   },
   bgBlack: {
     backgroundColor: Colors.black,
+  },
+  borderShadow: {
+    shadowColor: Colors.grey,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    borderWidth: Platform.OS === 'ios' ? 0 : 1,
+    borderColor: Colors.grey,
   },
 })

@@ -40,7 +40,7 @@ class DashBoard extends Component {
   }
 
   get Header() {
-    const city = this.props.currentLocation ? this.props.currentLocation.address.city : ''
+    const city = this.props.currentLocation ? this.props.currentLocation.city : ''
     return (
       <View>
         <SliderBanner data={[1, 2, 3]} renderItems={this.renderBannerItem} />
@@ -67,7 +67,11 @@ class DashBoard extends Component {
           data={['1', '2', '3']}
           horizontal
           keyExtractor={item => item}
-          renderItem={() => <Card onPress={onCardPress} />}
+          renderItem={() => (
+            <View style={{ marginRight: 11 }}>
+              <Card onPress={onCardPress} />
+            </View>
+          )}
         />
       </View>
     )
@@ -85,7 +89,11 @@ class DashBoard extends Component {
           data={['1', '2', '3']}
           horizontal
           keyExtractor={item => item}
-          renderItem={() => <Card onPress={onCardPress} />}
+          renderItem={() => (
+            <View style={[Grids.padSm]}>
+              <Card onPress={onCardPress} />
+            </View>
+          )}
         />
       </View>
     )

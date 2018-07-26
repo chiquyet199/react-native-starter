@@ -8,6 +8,7 @@ export default {
   blue: '#4a90e2',
   blueSky: '#4a4a4a',
   grey: '#9b9b9b',
+  lightGrey: Color('#9b9b9b').lighten(MODIFIER),
   white: '#ffffff',
   whiteOpacity: Color('#ffffff').darken(MODIFIER),
   black: '#000000',

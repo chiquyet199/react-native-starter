@@ -5,6 +5,7 @@ export default {
   skip: 'skip',
   save: 'save',
   home: 'Home',
+  menu: 'Menu',
   greetText: 'Hello from react native starter',
 
   // welcome page
@@ -32,4 +33,7 @@ export default {
   // detail page
   openNow: 'open now',
   promotion: 'Promotion',
+  location: 'Location',
+  viewMap: 'VIEW MAP',
+  review: 'Review',
 }

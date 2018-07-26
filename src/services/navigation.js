@@ -19,7 +19,7 @@ const openLandingPage = () => {
         children: [
           {
             component: {
-              name: routes.RestaurantDetail,
+              name: routes.Welcome,
               options: {
                 topBar: {
                   visible: false,

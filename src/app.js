@@ -16,11 +16,11 @@ class App extends React.Component {
   }
 
   startApp = async () => {
-    await Location.requestPermission()
-    const coodrs = await Location.getCurrentLocation()
-    const address = await Location.getAddress(coodrs)
-    storage.set(storageKey.LATEST_LOCATION, { ...address, coodrs })
-    Navigation.events().registerAppLaunchedListener(() => {
+    Navigation.events().registerAppLaunchedListener(async () => {
+      await Location.requestPermission()
+      const coodrs = await Location.getCurrentLocation()
+      const address = await Location.getAddress(coodrs)
+      await storage.set(storageKey.LATEST_LOCATION, { ...address, coodrs })
       openLandingPage()
     })
   }

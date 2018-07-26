@@ -4,7 +4,7 @@ import { View, Image, TouchableOpacity } from 'react-native'
 
 import { openRestaurantDetailModal } from 'services/navigation'
 import { Colors, Grids } from 'styles'
-import { TextFont, Rating, BackgroundView } from 'components'
+import { TextFont, Rating } from 'components'
 
 class Card extends React.Component {
   static propTypes = {
@@ -17,7 +17,13 @@ class Card extends React.Component {
   }
 
   get HeaderImage() {
-    return <BackgroundView style={{ height: 139, backgroundColor: 'black' }} bgUrl={require('assets/images/restaurant1.png')} />
+    return (
+      <Image
+        style={{ height: 139, width: '100%', backgroundColor: 'black' }}
+        resizeMode="cover"
+        source={require('assets/images/restaurant.jpeg')}
+      />
+    )
   }
 
   get Content() {
@@ -73,14 +79,16 @@ class Card extends React.Component {
     return (
       <TouchableOpacity
         onPress={this.props.onPress}
-        style={{
-          width: 232,
-          marginRight: 11,
-          borderWidth: 1,
-          borderRadius: 5,
-          borderColor: Colors.grey,
-          overflow: 'hidden',
-        }}
+        style={[
+          {
+            width: 232,
+            marginRight: 11,
+            borderWidth: 1,
+            borderRadius: 5,
+            borderColor: Colors.lightGrey,
+            overflow: 'hidden',
+          },
+        ]}
       >
         {this.HeaderImage}
         {this.Content}

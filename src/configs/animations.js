@@ -30,3 +30,15 @@ export const fadeAndSlideLeft = animatedValue => ({
     },
   ],
 })
+
+export const fadeAndSlideRight = animatedValue => ({
+  opacity: animatedValue,
+  transform: [
+    {
+      translateX: animatedValue.interpolate({
+        inputRange: [0.8, 1],
+        outputRange: [-30, 0],
+      }),
+    },
+  ],
+})

@@ -37,18 +37,13 @@ async function getAddress(coords) {
   const { latitude, longitude } = coords
   const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${latitude},${longitude}&key=${myApiKey}`
   const response = await api.get(url)
-  const { results } = response.data
-  if (results[9]) {
-    const addressComponents = results[9].address_components
-    return {
-      address: {
-        city: addressComponents[0].long_name,
-        country: addressComponents[1].long_name,
-      },
-      formatedAddress: results[0].formatted_address,
-    }
+  const addressComponents = response.data.results[0].address_components
+  const toTypes = (target, item) => ({ ...target, [`${item.types[0]}`]: item })
+  const addressComponentsByTypes = addressComponents.reduce(toTypes, {})
+  return {
+    city: addressComponentsByTypes['administrative_area_level_1'].long_name,
+    country: addressComponentsByTypes['country'].long_name,
   }
-  return null
 }
 
 export default { requestPermission, getCurrentLocation, getAddress }

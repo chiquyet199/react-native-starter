@@ -25,6 +25,7 @@ module.exports = {
     'no-return-assign': 0,
     'max-len': 0,
     'arrow-parens': 0,
+    'dot-notation': 0,
     'object-curly-newline': 0,
     'import/prefer-default-export': 0,
     'class-methods-use-this': 0,
