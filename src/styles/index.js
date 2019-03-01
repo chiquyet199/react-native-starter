@@ -1,5 +1,0 @@
-export { default as Grids } from './grids'
-export { default as Fonts } from './fonts'
-export { default as Colors } from './colors'
-export { default as Styles } from './common'
-export { default as Dimensions } from './dimensions'
